@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E02C912ECA0071854C /* tamagotchiApp.swift */; };
+		049A22E32C912ECA0071854C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E22C912ECA0071854C /* ContentView.swift */; };
+		049A22E52C912ECA0071854C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E42C912ECA0071854C /* Item.swift */; };
+		049A22E72C912ECB0071854C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E62C912ECB0071854C /* Assets.xcassets */; };
+		049A22EA2C912ECB0071854C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E92C912ECB0071854C /* Preview Assets.xcassets */; };
+		049A22F42C912ECB0071854C /* tamagotchiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22F32C912ECB0071854C /* tamagotchiTests.swift */; };
+		049A22FE2C912ECB0071854C /* tamagotchiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22FD2C912ECB0071854C /* tamagotchiUITests.swift */; };
+		049A23002C912ECB0071854C /* tamagotchiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22FF2C912ECB0071854C /* tamagotchiUITestsLaunchTests.swift */; };
+		049A230E2C9130860071854C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A230D2C9130860071854C /* User.swift */; };
+		049A23122C9133810071854C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23112C9133810071854C /* Notification.swift */; };
+		049A23142C9133F60071854C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23132C9133F60071854C /* Pet.swift */; };
+		049A23182C9136B60071854C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23172C9136B60071854C /* TaskItem.swift */; };
+		049A231C2C9138460071854C /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231B2C9138460071854C /* TaskList.swift */; };
+		049A231E2C91393F0071854C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231D2C91393F0071854C /* LoginView.swift */; };
+		049A23202C913F2D0071854C /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231F2C913F2D0071854C /* GetStartedView.swift */; };
+		049A23222C9142A90071854C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049A23212C9142A90071854C /* GoogleService-Info.plist */; };
+		049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23242C9143340071854C /* FirebaseAnalytics */; };
+		049A23312C9299000071854C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23302C9299000071854C /* FirebaseDatabase */; };
+		049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23342C93CD260071854C /* TaskListHomeView.swift */; };
+		049A23432C93E2650071854C /* PetMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23422C93E2650071854C /* PetMainView.swift */; };
+		049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23442C93E2CB0071854C /* FriendsMainView.swift */; };
+		049A23472C93E3940071854C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23462C93E3940071854C /* HomeView.swift */; };
+		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
+		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		049A22F02C912ECB0071854C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049A22D52C912ECA0071854C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049A22DC2C912ECA0071854C;
+			remoteInfo = tamagotchi;
+		};
+		049A22FA2C912ECB0071854C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049A22D52C912ECA0071854C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049A22DC2C912ECA0071854C;
+			remoteInfo = tamagotchi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049A22DD2C912ECA0071854C /* tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tamagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049A22E02C912ECA0071854C /* tamagotchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiApp.swift; sourceTree = "<group>"; };
+		049A22E22C912ECA0071854C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		049A22E42C912ECA0071854C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		049A22E62C912ECB0071854C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049A22E92C912ECB0071854C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		049A22EF2C912ECB0071854C /* tamagotchiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamagotchiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049A22F32C912ECB0071854C /* tamagotchiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiTests.swift; sourceTree = "<group>"; };
+		049A22F92C912ECB0071854C /* tamagotchiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamagotchiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049A22FD2C912ECB0071854C /* tamagotchiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiUITests.swift; sourceTree = "<group>"; };
+		049A22FF2C912ECB0071854C /* tamagotchiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		049A230D2C9130860071854C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		049A23112C9133810071854C /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		049A23132C9133F60071854C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		049A23172C9136B60071854C /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		049A231B2C9138460071854C /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		049A231D2C91393F0071854C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		049A231F2C913F2D0071854C /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
+		049A23212C9142A90071854C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		049A23342C93CD260071854C /* TaskListHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListHomeView.swift; sourceTree = "<group>"; };
+		049A23422C93E2650071854C /* PetMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMainView.swift; sourceTree = "<group>"; };
+		049A23442C93E2CB0071854C /* FriendsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMainView.swift; sourceTree = "<group>"; };
+		049A23462C93E3940071854C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
+		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		049A22DA2C912ECA0071854C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049A23312C9299000071854C /* FirebaseDatabase in Frameworks */,
+				049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049A22EC2C912ECB0071854C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049A22F62C912ECB0071854C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049A22D42C912ECA0071854C = {
+			isa = PBXGroup;
+			children = (
+				049A22DF2C912ECA0071854C /* tamagotchi */,
+				049A22F22C912ECB0071854C /* tamagotchiTests */,
+				049A22FC2C912ECB0071854C /* tamagotchiUITests */,
+				049A22DE2C912ECA0071854C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		049A22DE2C912ECA0071854C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049A22DD2C912ECA0071854C /* tamagotchi.app */,
+				049A22EF2C912ECB0071854C /* tamagotchiTests.xctest */,
+				049A22F92C912ECB0071854C /* tamagotchiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049A22DF2C912ECA0071854C /* tamagotchi */ = {
+			isa = PBXGroup;
+			children = (
+				049A23212C9142A90071854C /* GoogleService-Info.plist */,
+				049A230C2C9130670071854C /* data */,
+				049A22E02C912ECA0071854C /* tamagotchiApp.swift */,
+				049A231D2C91393F0071854C /* LoginView.swift */,
+				049A22E22C912ECA0071854C /* ContentView.swift */,
+				049A22E42C912ECA0071854C /* Item.swift */,
+				049A22E62C912ECB0071854C /* Assets.xcassets */,
+				049A22E82C912ECB0071854C /* Preview Content */,
+			);
+			path = tamagotchi;
+			sourceTree = "<group>";
+		};
+		049A22E82C912ECB0071854C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				049A22E92C912ECB0071854C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		049A22F22C912ECB0071854C /* tamagotchiTests */ = {
+			isa = PBXGroup;
+			children = (
+				049A22F32C912ECB0071854C /* tamagotchiTests.swift */,
+			);
+			path = tamagotchiTests;
+			sourceTree = "<group>";
+		};
+		049A22FC2C912ECB0071854C /* tamagotchiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				049A22FD2C912ECB0071854C /* tamagotchiUITests.swift */,
+				049A22FF2C912ECB0071854C /* tamagotchiUITestsLaunchTests.swift */,
+			);
+			path = tamagotchiUITests;
+			sourceTree = "<group>";
+		};
+		049A230C2C9130670071854C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				049A233F2C93DE3C0071854C /* elements */,
+				049A233A2C93DB240071854C /* views */,
+				049A23262C9148000071854C /* entities */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		049A23262C9148000071854C /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				049A230D2C9130860071854C /* User.swift */,
+				049A23132C9133F60071854C /* Pet.swift */,
+				049A23172C9136B60071854C /* TaskItem.swift */,
+				049A231B2C9138460071854C /* TaskList.swift */,
+				049A23112C9133810071854C /* Notification.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		049A233A2C93DB240071854C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				049A233E2C93DBB10071854C /* pet */,
+				049A233D2C93DB970071854C /* friends */,
+				049A233C2C93DB8C0071854C /* tasklist */,
+				049A233B2C93DB330071854C /* profiling */,
+				049A23462C93E3940071854C /* HomeView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		049A233B2C93DB330071854C /* profiling */ = {
+			isa = PBXGroup;
+			children = (
+				049A231F2C913F2D0071854C /* GetStartedView.swift */,
+			);
+			path = profiling;
+			sourceTree = "<group>";
+		};
+		049A233C2C93DB8C0071854C /* tasklist */ = {
+			isa = PBXGroup;
+			children = (
+				049A23342C93CD260071854C /* TaskListHomeView.swift */,
+				049A23482C93E4890071854C /* TaskListCreateView.swift */,
+			);
+			path = tasklist;
+			sourceTree = "<group>";
+		};
+		049A233D2C93DB970071854C /* friends */ = {
+			isa = PBXGroup;
+			children = (
+				049A23442C93E2CB0071854C /* FriendsMainView.swift */,
+			);
+			path = friends;
+			sourceTree = "<group>";
+		};
+		049A233E2C93DBB10071854C /* pet */ = {
+			isa = PBXGroup;
+			children = (
+				049A23422C93E2650071854C /* PetMainView.swift */,
+			);
+			path = pet;
+			sourceTree = "<group>";
+		};
+		049A233F2C93DE3C0071854C /* elements */ = {
+			isa = PBXGroup;
+			children = (
+				049A234C2C93FB4A0071854C /* TaskItemView.swift */,
+			);
+			path = elements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		049A22DC2C912ECA0071854C /* tamagotchi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049A23032C912ECB0071854C /* Build configuration list for PBXNativeTarget "tamagotchi" */;
+			buildPhases = (
+				049A22D92C912ECA0071854C /* Sources */,
+				049A22DA2C912ECA0071854C /* Frameworks */,
+				049A22DB2C912ECA0071854C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tamagotchi;
+			packageProductDependencies = (
+				049A23242C9143340071854C /* FirebaseAnalytics */,
+				049A23302C9299000071854C /* FirebaseDatabase */,
+			);
+			productName = tamagotchi;
+			productReference = 049A22DD2C912ECA0071854C /* tamagotchi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		049A22EE2C912ECB0071854C /* tamagotchiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049A23062C912ECB0071854C /* Build configuration list for PBXNativeTarget "tamagotchiTests" */;
+			buildPhases = (
+				049A22EB2C912ECB0071854C /* Sources */,
+				049A22EC2C912ECB0071854C /* Frameworks */,
+				049A22ED2C912ECB0071854C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049A22F12C912ECB0071854C /* PBXTargetDependency */,
+			);
+			name = tamagotchiTests;
+			productName = tamagotchiTests;
+			productReference = 049A22EF2C912ECB0071854C /* tamagotchiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		049A22F82C912ECB0071854C /* tamagotchiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049A23092C912ECB0071854C /* Build configuration list for PBXNativeTarget "tamagotchiUITests" */;
+			buildPhases = (
+				049A22F52C912ECB0071854C /* Sources */,
+				049A22F62C912ECB0071854C /* Frameworks */,
+				049A22F72C912ECB0071854C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049A22FB2C912ECB0071854C /* PBXTargetDependency */,
+			);
+			name = tamagotchiUITests;
+			productName = tamagotchiUITests;
+			productReference = 049A22F92C912ECB0071854C /* tamagotchiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		049A22D52C912ECA0071854C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					049A22DC2C912ECA0071854C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					049A22EE2C912ECB0071854C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 049A22DC2C912ECA0071854C;
+					};
+					049A22F82C912ECB0071854C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 049A22DC2C912ECA0071854C;
+					};
+				};
+			};
+			buildConfigurationList = 049A22D82C912ECA0071854C /* Build configuration list for PBXProject "tamagotchi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 049A22D42C912ECA0071854C;
+			packageReferences = (
+				049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 049A22DE2C912ECA0071854C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				049A22DC2C912ECA0071854C /* tamagotchi */,
+				049A22EE2C912ECB0071854C /* tamagotchiTests */,
+				049A22F82C912ECB0071854C /* tamagotchiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		049A22DB2C912ECA0071854C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049A22EA2C912ECB0071854C /* Preview Assets.xcassets in Resources */,
+				049A22E72C912ECB0071854C /* Assets.xcassets in Resources */,
+				049A23222C9142A90071854C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049A22ED2C912ECB0071854C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049A22F72C912ECB0071854C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049A22D92C912ECA0071854C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049A231C2C9138460071854C /* TaskList.swift in Sources */,
+				049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */,
+				049A23142C9133F60071854C /* Pet.swift in Sources */,
+				049A23432C93E2650071854C /* PetMainView.swift in Sources */,
+				049A23472C93E3940071854C /* HomeView.swift in Sources */,
+				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
+				049A230E2C9130860071854C /* User.swift in Sources */,
+				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
+				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
+				049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */,
+				049A23182C9136B60071854C /* TaskItem.swift in Sources */,
+				049A23122C9133810071854C /* Notification.swift in Sources */,
+				049A22E52C912ECA0071854C /* Item.swift in Sources */,
+				049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */,
+				049A23202C913F2D0071854C /* GetStartedView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049A22EB2C912ECB0071854C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049A22F42C912ECB0071854C /* tamagotchiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049A22F52C912ECB0071854C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049A22FE2C912ECB0071854C /* tamagotchiUITests.swift in Sources */,
+				049A23002C912ECB0071854C /* tamagotchiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		049A22F12C912ECB0071854C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049A22DC2C912ECA0071854C /* tamagotchi */;
+			targetProxy = 049A22F02C912ECB0071854C /* PBXContainerItemProxy */;
+		};
+		049A22FB2C912ECB0071854C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049A22DC2C912ECA0071854C /* tamagotchi */;
+			targetProxy = 049A22FA2C912ECB0071854C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		049A23012C912ECB0071854C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		049A23022C912ECB0071854C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		049A23042C912ECB0071854C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tamagotchi/Preview Content\"";
+				DEVELOPMENT_TEAM = QRL5NSR5NS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		049A23052C912ECB0071854C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tamagotchi/Preview Content\"";
+				DEVELOPMENT_TEAM = QRL5NSR5NS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		049A23072C912ECB0071854C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tamagotchi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tamagotchi";
+			};
+			name = Debug;
+		};
+		049A23082C912ECB0071854C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tamagotchi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tamagotchi";
+			};
+			name = Release;
+		};
+		049A230A2C912ECB0071854C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QRL5NSR5NS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tamagotchi;
+			};
+			name = Debug;
+		};
+		049A230B2C912ECB0071854C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QRL5NSR5NS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tamagotchi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		049A22D82C912ECA0071854C /* Build configuration list for PBXProject "tamagotchi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049A23012C912ECB0071854C /* Debug */,
+				049A23022C912ECB0071854C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049A23032C912ECB0071854C /* Build configuration list for PBXNativeTarget "tamagotchi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049A23042C912ECB0071854C /* Debug */,
+				049A23052C912ECB0071854C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049A23062C912ECB0071854C /* Build configuration list for PBXNativeTarget "tamagotchiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049A23072C912ECB0071854C /* Debug */,
+				049A23082C912ECB0071854C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049A23092C912ECB0071854C /* Build configuration list for PBXNativeTarget "tamagotchiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049A230A2C912ECB0071854C /* Debug */,
+				049A230B2C912ECB0071854C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		049A23242C9143340071854C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		049A23302C9299000071854C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 049A22D52C912ECA0071854C /* Project object */;
+}
