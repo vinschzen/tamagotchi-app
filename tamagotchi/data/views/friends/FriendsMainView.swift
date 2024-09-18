@@ -45,20 +45,23 @@ struct FriendsMainView: View {
             ZStack {
                 List(filteredFriends) { friend in
                     HStack {
-                        Image(friend.avatar)
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.green, lineWidth: 1))
-                        
-                        VStack(alignment: .leading) {
-                            Text(friend.name)
-                                .font(.headline)
+                        NavigationLink(destination: MeetFriendsView(friend: friend)) {
+                            Image(friend.avatar)
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.green, lineWidth: 1))
                             
-                            Text("Level " + String(friend.level))
-                                .font(.footnote)
-                                .foregroundColor(.secondary)
+                            VStack(alignment: .leading) {
+                                Text(friend.name)
+                                    .font(.headline)
+                                
+                                Text("Level " + String(friend.level))
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                            }
                         }
+                        
                     }
                     .padding(.vertical, 8)
                 }
