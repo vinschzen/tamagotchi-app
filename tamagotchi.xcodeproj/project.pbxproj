@@ -355,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				049A22EA2C912ECB0071854C /* Preview Assets.xcassets in Resources */,
+				04F4B8272C9A85500051EC9E /* GoogleService-Info.plist in Resources */,
 				049A22E72C912ECB0071854C /* Assets.xcassets in Resources */,
 				04FF3B842C9AB71600F0C0D7 /* GoogleService-Info.plist in Resources */,
 			);
