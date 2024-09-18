@@ -22,7 +22,6 @@
 		049A231C2C9138460071854C /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231B2C9138460071854C /* TaskList.swift */; };
 		049A231E2C91393F0071854C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231D2C91393F0071854C /* LoginView.swift */; };
 		049A23202C913F2D0071854C /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231F2C913F2D0071854C /* GetStartedView.swift */; };
-		049A23222C9142A90071854C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049A23212C9142A90071854C /* GoogleService-Info.plist */; };
 		049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23242C9143340071854C /* FirebaseAnalytics */; };
 		049A23312C9299000071854C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23302C9299000071854C /* FirebaseDatabase */; };
 		049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23342C93CD260071854C /* TaskListHomeView.swift */; };
@@ -31,6 +30,7 @@
 		049A23472C93E3940071854C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23462C93E3940071854C /* HomeView.swift */; };
 		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
 		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
+		04F4B8272C9A85500051EC9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F4B8262C9A85500051EC9E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +69,13 @@
 		049A231B2C9138460071854C /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		049A231D2C91393F0071854C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		049A231F2C913F2D0071854C /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
-		049A23212C9142A90071854C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		049A23342C93CD260071854C /* TaskListHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListHomeView.swift; sourceTree = "<group>"; };
 		049A23422C93E2650071854C /* PetMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMainView.swift; sourceTree = "<group>"; };
 		049A23442C93E2CB0071854C /* FriendsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMainView.swift; sourceTree = "<group>"; };
 		049A23462C93E3940071854C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
 		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		04F4B8262C9A85500051EC9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 		049A22DF2C912ECA0071854C /* tamagotchi */ = {
 			isa = PBXGroup;
 			children = (
-				049A23212C9142A90071854C /* GoogleService-Info.plist */,
+				04F4B8262C9A85500051EC9E /* GoogleService-Info.plist */,
 				049A230C2C9130670071854C /* data */,
 				049A22E02C912ECA0071854C /* tamagotchiApp.swift */,
 				049A231D2C91393F0071854C /* LoginView.swift */,
@@ -352,8 +352,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				049A22EA2C912ECB0071854C /* Preview Assets.xcassets in Resources */,
+				04F4B8272C9A85500051EC9E /* GoogleService-Info.plist in Resources */,
 				049A22E72C912ECB0071854C /* Assets.xcassets in Resources */,
-				049A23222C9142A90071854C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
