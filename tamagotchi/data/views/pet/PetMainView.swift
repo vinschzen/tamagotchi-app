@@ -18,14 +18,6 @@ struct PetMainView: View {
                             .foregroundColor(.blue)
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        // Handle right button action in navigation bar
-                    }) {
-                        Image(systemName: "magnifyingglass")
-                            .foregroundColor(.blue)
-                    }
-                }
             }
             
         }

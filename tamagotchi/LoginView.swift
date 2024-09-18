@@ -66,6 +66,6 @@ struct LoginView: View {
 }
 
 #Preview {
-    ContentView()
+    LoginView()
         .modelContainer(for: Item.self, inMemory: true)
 }
