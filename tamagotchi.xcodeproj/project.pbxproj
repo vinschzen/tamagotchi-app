@@ -31,6 +31,7 @@
 		049A23472C93E3940071854C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23462C93E3940071854C /* HomeView.swift */; };
 		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
 		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
+		049DA36D2C9A891700E9B05B /* AddFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DA36C2C9A891700E9B05B /* AddFriendsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		049A23462C93E3940071854C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
 		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		049DA36C2C9A891700E9B05B /* AddFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				049A23442C93E2CB0071854C /* FriendsMainView.swift */,
+				049DA36C2C9A891700E9B05B /* AddFriendsView.swift */,
 			);
 			path = friends;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				049A230E2C9130860071854C /* User.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+				049DA36D2C9A891700E9B05B /* AddFriendsView.swift in Sources */,
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
 				049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */,
 				049A23182C9136B60071854C /* TaskItem.swift in Sources */,
