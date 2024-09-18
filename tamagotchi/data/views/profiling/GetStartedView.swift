@@ -88,6 +88,6 @@ struct GetStartedView: View {
 }
 
 #Preview {
-    ContentView()
+    GetStartedView()
         .modelContainer(for: Item.self, inMemory: true)
 }
