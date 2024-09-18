@@ -49,7 +49,7 @@ struct FriendsMainView: View {
                             .resizable()
                             .frame(width: 40, height: 40)
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                            .overlay(Circle().stroke(Color.green, lineWidth: 1))
                         
                         VStack(alignment: .leading) {
                             Text(friend.name)
@@ -65,9 +65,8 @@ struct FriendsMainView: View {
                 .listStyle(PlainListStyle())
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
 
-                // Add Friend Button at the bottom
                 VStack {
-                    Spacer() // Push the button to the bottom
+                    Spacer()
                     NavigationLink(destination: AddFriendsView()) {
                         HStack {
                             Image(systemName: "plus")
