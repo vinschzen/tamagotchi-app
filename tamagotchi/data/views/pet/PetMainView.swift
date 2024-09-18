@@ -18,8 +18,13 @@ struct PetMainView: View {
                             .foregroundColor(.blue)
                     }
                 }
+<<<<<<< HEAD
             }
             
+=======
+                
+            }            
+>>>>>>> 39968a4 (insert and check to do list)
         }
         .tabViewStyle(.automatic)
 //        .bottomSheet(isPresented: $showBottomSheet) {

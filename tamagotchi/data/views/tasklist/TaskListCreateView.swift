@@ -3,7 +3,9 @@ import SwiftUI
 struct TaskListCreateView: View {
     @State private var selectedTab = 0
     @State private var isEditingTitle = false
-    @State private var title = ""
+    @State private var tasklist_title = ""
+    
+    @State private var task_title = ""
 
     @State private var selectedIndex: Int = 0
     @State private var isOn = false
@@ -17,6 +19,11 @@ struct TaskListCreateView: View {
     @State private var time = "00:00"
     
     @State private var addedTasks = [TaskItem]()
+    
+    @State private var showAlert = false
+    
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         NavigationView {
@@ -31,7 +38,7 @@ struct TaskListCreateView: View {
                 .padding(.horizontal)
 
                 HStack {
-                    TextField("Enter title", text: $title)
+                    TextField("Enter title", text: $tasklist_title)
                         .textFieldStyle(.roundedBorder)
                         .frame(maxWidth: .infinity)
                         .padding(.horizontal)
@@ -41,13 +48,10 @@ struct TaskListCreateView: View {
                         }
                 }
                 .padding(.horizontal)
+                
 
                 List {
                     TaskItemView(addedTasks: addedTasks)
-//                    ForEach($addedTasks) { t in
-//                        TaskItemView(t.name, t.date, t.time)
-                        
-//                    }
                     
                     Button(action: {
                         isPopoverOpen.toggle()
@@ -66,7 +70,7 @@ struct TaskListCreateView: View {
                                 .font(.system(size: 28))
 
                             HStack {
-                                TextField("Enter task name", text: $title)
+                                TextField("Enter task name", text: $task_title)
                                     .textFieldStyle(.roundedBorder)
                                     .frame(maxWidth: .infinity)
                                     .padding(.horizontal)
@@ -88,19 +92,11 @@ struct TaskListCreateView: View {
                                 dateFormatter.dateFormat = "yyyy-MM-dd"
                                 let dateString = dateFormatter.string(from: newValue)
 
-
                                 let timeFormatter = DateFormatter()
                                 timeFormatter.dateFormat = "HH:mm"
                                 let timeString = timeFormatter.string(from: newValue)
-
-                                date = newValue
-                                time = timeString
-
-                                print("Selected date: \(dateString)")
-                                print("Selected time: \(timeString)")
                             }
                             .padding(.horizontal)
-
 
                             Picker("Priority", selection: $selectedPriority) {
                                 ForEach(priorities, id: \.self) { priority in
@@ -108,8 +104,12 @@ struct TaskListCreateView: View {
                                 }
                             }
                             
-                            
                             Button(action: {
+                                guard !task_title.isEmpty else {
+                                    showAlert = true
+                                    return
+                                }
+                                
                                 var input_priority = 0
 
                                 switch selectedPriority {
@@ -123,8 +123,8 @@ struct TaskListCreateView: View {
                                     input_priority = 0
                                 }
                                 addedTasks.append(
-                                    TaskItem(id: "id",
-                                             name: title,
+                                    TaskItem(
+                                             name:task_title,
                                              difficulty: 0,
                                              date: date,
                                              time: time,
@@ -134,7 +134,7 @@ struct TaskListCreateView: View {
                                 )
                                 
                                 isPopoverOpen = false
-
+                                dump(addedTasks)
                             }) {
                                 
                                 Text("Add Task")
@@ -143,27 +143,42 @@ struct TaskListCreateView: View {
                                     .padding()
                                     .background(Color.blue)
                                     .cornerRadius(10)
+                                    .padding()
+                            }
+                            .alert(isPresented: $showAlert) {
+                                Alert(title: Text("Empty Task Title"), message: Text("Please enter a title for your task."))
                             }
                         }
                         
                     }
-                    
                 }
                 
-                
-                
-                NavigationLink(destination: TaskListCreateView()) {
-                
-                        Text("Finish List")
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.white)
-                            .padding()
-                            .background(Color.blue)
-                            .cornerRadius(10)
+                Button(action: {
+                    let tasklist = TaskList(
+                        title: tasklist_title,
+                        shared: false,
+                        tasklist: addedTasks
+                    )
+                    context.insert(tasklist)
+                    do {
+                        try context.save()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                     
+//                    tasklist_title = ""
+//                    dismiss()
+                    
+                })
+                {
+                    Text("Finish List")
+                        .frame(maxWidth: .infinity)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding()
                 }
-                
-           
                 
             }
             

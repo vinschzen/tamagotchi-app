@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040569B52C99183D00551189 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040569B42C99183D00551189 /* Helper.swift */; };
+		040569B72C993B6800551189 /* CollapsibleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040569B62C993B6800551189 /* CollapsibleList.swift */; };
+		040FD8422C9A918E007702FB /* TaskListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FD8412C9A918E007702FB /* TaskListDetailsView.swift */; };
 		049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E02C912ECA0071854C /* tamagotchiApp.swift */; };
 		049A22E32C912ECA0071854C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E22C912ECA0071854C /* ContentView.swift */; };
 		049A22E52C912ECA0071854C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E42C912ECA0071854C /* Item.swift */; };
@@ -30,7 +33,11 @@
 		049A23472C93E3940071854C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23462C93E3940071854C /* HomeView.swift */; };
 		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
 		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
+<<<<<<< HEAD
 		04C4EA4F2C993409009BE09E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C4EA4E2C993409009BE09E /* GoogleService-Info.plist */; };
+=======
+		04E8E51F2C9A7C06002EFFB1 /* CollapsibleListChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8E51E2C9A7C06002EFFB1 /* CollapsibleListChildren.swift */; };
+>>>>>>> 39968a4 (insert and check to do list)
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040569B42C99183D00551189 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		040569B62C993B6800551189 /* CollapsibleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleList.swift; sourceTree = "<group>"; };
+		040FD8412C9A918E007702FB /* TaskListDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDetailsView.swift; sourceTree = "<group>"; };
 		049A22DD2C912ECA0071854C /* tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tamagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049A22E02C912ECA0071854C /* tamagotchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiApp.swift; sourceTree = "<group>"; };
 		049A22E22C912ECA0071854C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,7 +85,11 @@
 		049A23462C93E3940071854C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
 		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		04C4EA4E2C993409009BE09E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+=======
+		04E8E51E2C9A7C06002EFFB1 /* CollapsibleListChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleListChildren.swift; sourceTree = "<group>"; };
+>>>>>>> 39968a4 (insert and check to do list)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +150,7 @@
 				049A22E42C912ECA0071854C /* Item.swift */,
 				049A22E62C912ECB0071854C /* Assets.xcassets */,
 				049A22E82C912ECB0071854C /* Preview Content */,
+				040569B42C99183D00551189 /* Helper.swift */,
 			);
 			path = tamagotchi;
 			sourceTree = "<group>";
@@ -212,6 +227,7 @@
 			children = (
 				049A23342C93CD260071854C /* TaskListHomeView.swift */,
 				049A23482C93E4890071854C /* TaskListCreateView.swift */,
+				040FD8412C9A918E007702FB /* TaskListDetailsView.swift */,
 			);
 			path = tasklist;
 			sourceTree = "<group>";
@@ -236,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				049A234C2C93FB4A0071854C /* TaskItemView.swift */,
+				040569B62C993B6800551189 /* CollapsibleList.swift */,
+				04E8E51E2C9A7C06002EFFB1 /* CollapsibleListChildren.swift */,
 			);
 			path = elements;
 			sourceTree = "<group>";
@@ -386,10 +404,14 @@
 				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
 				049A230E2C9130860071854C /* User.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
+				040569B52C99183D00551189 /* Helper.swift in Sources */,
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
 				049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */,
+				040FD8422C9A918E007702FB /* TaskListDetailsView.swift in Sources */,
+				040569B72C993B6800551189 /* CollapsibleList.swift in Sources */,
 				049A23182C9136B60071854C /* TaskItem.swift in Sources */,
+				04E8E51F2C9A7C06002EFFB1 /* CollapsibleListChildren.swift in Sources */,
 				049A23122C9133810071854C /* Notification.swift in Sources */,
 				049A22E52C912ECA0071854C /* Item.swift in Sources */,
 				049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */,

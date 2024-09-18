@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct TaskListHomeView: View {
     @State private var selectedTab = 0
@@ -12,75 +13,97 @@ struct TaskListHomeView: View {
     
     var filters = ["Today", "Recent", "Oldest"]
     @State private var selectedFilter: String = "Today"
+    
+    
 
+    @Environment(\.modelContext) private var context
+    @Query private var tasklists: [TaskList]
+
+    @State private var isSectionExpanded: [Bool] = Array(repeating: false, count: 50)
 
     var body: some View {
-        NavigationView {
-            VStack {
-     
-
-                List {
-//                    ForEach(toDoItems) { item in
-//                        // Display to-do item content
-//                    }
+        NavigationSplitView {
+            List {
+//                CollapsibleList(tasklists: tasklists)
+                ForEach(0..<tasklists.count, id: \.self) { sectionIndex in
+                    DisclosureGroup(
+                        tasklists[sectionIndex].title,
+                        isExpanded: $isSectionExpanded[sectionIndex]
+                    ) {
+                        ForEach(tasklists[sectionIndex].tasklist) { t in
+                            HStack {
+                                Image(systemName: t.finished
+                                      ? "largecircle.fill.circle"
+                                      : "circle"
+                                )
+                                .imageScale(.large)
+                                .foregroundColor(.accentColor)
+                                .onTapGesture {
+                                    t.finished.toggle()
+                                }
+                                Text(t.name)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                        }
+                    }
+                    .frame(width: 300)
                 }
-                
-                NavigationLink(destination: TaskListCreateView()) {
-                
-                        Text("New List")
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.white)
-                            .padding()
-                            .background(Color.blue)
-                            .cornerRadius(10)
-                    
-                }.navigationBarTitle("Create Task", displayMode: .inline)
-
-                
             }
             .navigationBarTitle("Task List", displayMode: .inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        // Handle left button action in navigation bar
-                    }) {
-                        Image(systemName: "chevron.left")
-                            .foregroundColor(.blue)
-                    }
+                ToolbarItem {
+                    NavigationLink(destination: TaskListCreateView()) {
+    
+                        Button(action: addItem) {
+                            Label("Add Item", systemImage: "plus")
+                        }
+    
+                    }.navigationBarTitle("Create Task", displayMode: .inline)
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    
-//                    Button(action: {
-//                        isPopoverOpen.toggle()
-//                    }) {
-//                        HStack {
-//                            Image(systemName: "magnifyingglass")
-//                                .foregroundColor(.blue)
-//                            Text("Options")
-//                        }
-//                    }
-//                    .popover(isPresented: $isPopoverOpen) {
-//                        Picker("Filter by", selection: $selectedFilter) {
-//                            ForEach(filters, id: \.self) { filter in
-//                                Text(filter)
-//                            }
-//                        }
-//                    }
-//                    
-                    Button(action: {
-                        // Handle right button action in navigation bar
-                        
-                    }) {
-                        Image(systemName: "magnifyingglass")
-                            .foregroundColor(.blue)
+                ToolbarItem {
+                    Button(action: filter) {
+                        Label("Filter", systemImage: "magnifyingglass")
                     }
                 }
             }
-            
+        } detail: {
+            Text("Select an item")
         }
-        .tabViewStyle(.automatic)
-//        .bottomSheet(isPresented: $showBottomSheet) {
-//            BottomSheetContent()
-//        }
     }
+    
+    private func addItem() {
+        
+        withAnimation {
+//            let newItem = TaskList(timestamp: Date())
+//            context.insert(newItem)
+        }
+    }
+    
+    private func deleteItems(offsets: IndexSet) {
+        withAnimation {
+            for index in offsets {
+                context.delete(tasklists[index])
+            }
+        }
+    }
+    
+    private func details(offsets: IndexSet) {
+        withAnimation {
+            for index in offsets {
+                TaskListDetailsView(tasklist: tasklists[index])
+            }
+        }
+    }
+    
+    
+    
+    private func filter() {
+        
+    }
+}
+
+
+#Preview {
+    TaskListHomeView()
+        .modelContainer(for: TaskList.self, inMemory: true)
 }
