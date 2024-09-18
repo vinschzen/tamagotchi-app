@@ -4,21 +4,34 @@ struct Friend: Identifiable {
     let id = UUID()
     let name: String
     let avatar: String
+    let level: Int
 }
 
 struct FriendsMainView: View {
     
     let friends = [
-        Friend(name: "Budiono Siregar", avatar: "fox"),
-        Friend(name: "Andre Onderdil", avatar: "idk"),
-        Friend(name: "Wahyu Kopling", avatar: "duck"),
-        Friend(name: "Ambatukam", avatar: "fox"),
-        Friend(name: "Mas Rusdi", avatar: "duck"),
-        Friend(name: "Farhan Kebab", avatar: "idk"),
+        Friend(name: "Budiono Siregar", avatar: "fox", level: 25),
+        Friend(name: "Andre Onderdil", avatar: "idk", level: 10),
+        Friend(name: "Wahyu Kopling", avatar: "duck", level: 14),
+        Friend(name: "Ambatukam", avatar: "fox", level: 37),
+        Friend(name: "Mas Rusdi", avatar: "duck", level: 26),
+        Friend(name: "Farhan Kebab", avatar: "idk", level: 9),
+        Friend(name: "Joko Siang", avatar: "fox", level: 31),
+        Friend(name: "Ahmad Bekasi", avatar: "duck", level: 19),
+        Friend(name: "Siti Pertiwi", avatar: "idk", level: 45),
+        Friend(name: "Dewi Lestari", avatar: "fox", level: 8),
+        Friend(name: "Anita Tarigan", avatar: "duck", level: 22),
+        Friend(name: "Fauzan Raden", avatar: "idk", level: 33),
+        Friend(name: "Bambang Widi", avatar: "fox", level: 17),
+        Friend(name: "Novi Pangestu", avatar: "duck", level: 29),
+        Friend(name: "Ayu Cempaka", avatar: "idk", level: 15),
+        Friend(name: "Rio Satria", avatar: "fox", level: 27),
+        Friend(name: "Agus Santoso", avatar: "duck", level: 12),
+        Friend(name: "Dani Setiawan", avatar: "idk", level: 18),
     ]
-    
+
     @State private var searchText = ""
-    
+
     var filteredFriends: [Friend] {
         if searchText.isEmpty {
             return friends
@@ -29,7 +42,7 @@ struct FriendsMainView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            ZStack {
                 List(filteredFriends) { friend in
                     HStack {
                         Image(friend.avatar)
@@ -38,23 +51,24 @@ struct FriendsMainView: View {
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.gray, lineWidth: 1))
                         
-                        Text(friend.name)
-                            .font(.headline)
+                        VStack(alignment: .leading) {
+                            Text(friend.name)
+                                .font(.headline)
+                            
+                            Text("Level " + String(friend.level))
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
+                        }
                     }
                     .padding(.vertical, 8)
                 }
                 .listStyle(PlainListStyle())
-                // Add the searchable modifier here
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
-                
-                Spacer()
-                
-                HStack {
-                    Spacer()
-                    // Add Friend Button
-                    Button(action: {
-                        // Handle the add friend action
-                    }) {
+
+                // Add Friend Button at the bottom
+                VStack {
+                    Spacer() // Push the button to the bottom
+                    NavigationLink(destination: AddFriendsView()) {
                         HStack {
                             Image(systemName: "plus")
                                 .foregroundColor(.white)
@@ -64,18 +78,19 @@ struct FriendsMainView: View {
                         }
                         .padding()
                         .frame(height: 35)
-                        .background(Color.blue)
+                        .background(Color.secondary)
                         .cornerRadius(20)
+                        .padding(20)
                     }
-                    .padding(20)
                 }
             }
-            .navigationTitle("Friend List")
+            .navigationTitle("Friends")
             .navigationBarTitleDisplayMode(.inline)
         }
         .tabViewStyle(.automatic)
     }
 }
+
 
 #Preview {
     FriendsMainView()
