@@ -16,11 +16,11 @@ struct FriendsMainView: View {
         Friend(name: "Ambatukam", avatar: "fox", level: 37),
         Friend(name: "Mas Rusdi", avatar: "duck", level: 26),
         Friend(name: "Farhan Kebab", avatar: "idk", level: 9),
-        Friend(name: "Joko Siang", avatar: "fox", level: 31),
+        Friend(name: "Joko Kemalaman", avatar: "fox", level: 31),
         Friend(name: "Ahmad Bekasi", avatar: "duck", level: 19),
-        Friend(name: "Siti Pertiwi", avatar: "idk", level: 45),
+        Friend(name: "Siti Tahu Bakso", avatar: "idk", level: 45),
         Friend(name: "Dewi Lestari", avatar: "fox", level: 8),
-        Friend(name: "Anita Tarigan", avatar: "duck", level: 22),
+        Friend(name: "Hasan Keseimbangan", avatar: "duck", level: 22),
         Friend(name: "Fauzan Raden", avatar: "idk", level: 33),
         Friend(name: "Bambang Widi", avatar: "fox", level: 17),
         Friend(name: "Novi Pangestu", avatar: "duck", level: 29),
@@ -50,18 +50,18 @@ struct FriendsMainView: View {
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .clipShape(Circle())
+                                .ignoresSafeArea()
                                 .overlay(Circle().stroke(Color.green, lineWidth: 1))
                             
                             VStack(alignment: .leading) {
                                 Text(friend.name)
                                     .font(.headline)
                                 
-                                Text("Level " + String(friend.level))
+                                Text("Level \(friend.level)")
                                     .font(.footnote)
                                     .foregroundColor(.secondary)
                             }
                         }
-                        
                     }
                     .padding(.vertical, 8)
                 }
@@ -88,11 +88,16 @@ struct FriendsMainView: View {
             }
             .navigationTitle("Friends")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                // Menambahkan tombol pada navigation bar
+                NavigationLink(destination: RequestFriendsView()) {
+                    Image(systemName: "person.badge.clock")
+                }
+            }
         }
         .tabViewStyle(.automatic)
     }
 }
-
 
 #Preview {
     FriendsMainView()
