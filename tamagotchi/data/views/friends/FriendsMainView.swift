@@ -10,7 +10,7 @@ struct Friend: Identifiable {
 struct FriendsMainView: View {
     
     let friends = [
-        Friend(name: "Budiono Siregar", avatar: "fox", level: 25),
+        Friend(name: "Budiono Siregar", avatar: "fox-main", level: 25),
         Friend(name: "Andre Onderdil", avatar: "idk", level: 10),
         Friend(name: "Wahyu Kopling", avatar: "duck", level: 14),
         Friend(name: "Ambatukam", avatar: "fox", level: 37),
@@ -29,9 +29,9 @@ struct FriendsMainView: View {
         Friend(name: "Agus Santoso", avatar: "duck", level: 12),
         Friend(name: "Dani Setiawan", avatar: "idk", level: 18),
     ]
-
+    
     @State private var searchText = ""
-
+    
     var filteredFriends: [Friend] {
         if searchText.isEmpty {
             return friends
@@ -41,17 +41,17 @@ struct FriendsMainView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 List(filteredFriends) { friend in
                     HStack {
                         NavigationLink(destination: MeetFriendsView(friend: friend)) {
                             Image(friend.avatar)
                                 .resizable()
+                                .aspectRatio(contentMode: .fit)
                                 .frame(width: 40, height: 40)
                                 .clipShape(Circle())
-                                .ignoresSafeArea()
-                                .overlay(Circle().stroke(Color.green, lineWidth: 1))
+                                .overlay(Circle().stroke(Color.green, lineWidth: 2))
                             
                             VStack(alignment: .leading) {
                                 Text(friend.name)
@@ -67,31 +67,32 @@ struct FriendsMainView: View {
                 }
                 .listStyle(PlainListStyle())
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
-
+                
                 VStack {
                     Spacer()
                     NavigationLink(destination: AddFriendsView()) {
-                        HStack {
+                        Spacer()
+                        ZStack {
+                            Circle()
+                                .frame(height: 55)
+                                .padding(.horizontal, 30)
+                                .padding(.vertical, 30)
+                                .foregroundColor(.green)
+                            
                             Image(systemName: "plus")
+                                .font(.system(size: 25, weight: .bold))
                                 .foregroundColor(.white)
-                            Text("Add Friend")
-                                .foregroundColor(.white)
-                                .bold()
                         }
-                        .padding()
-                        .frame(height: 35)
-                        .background(Color.secondary)
-                        .cornerRadius(20)
-                        .padding(20)
+                        
                     }
                 }
             }
             .navigationTitle("Friends")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                // Menambahkan tombol pada navigation bar
                 NavigationLink(destination: RequestFriendsView()) {
-                    Image(systemName: "person.badge.clock")
+                    Image(systemName: "person.badge.clock.fill")
+                        .foregroundColor(.green)
                 }
             }
         }

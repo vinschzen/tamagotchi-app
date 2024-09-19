@@ -36,86 +36,93 @@ struct RequestFriendsView: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack {
-                List(filteredFriends) { friend in
-                    HStack {
-                        Image(friend.avatar)
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.green, lineWidth: 1))
+        VStack {
+            List(filteredFriends) { friend in
+                HStack {
+                    Image(friend.avatar)
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.green, lineWidth: 2))
+                    
+                    VStack(alignment: .leading) {
+                        Text(friend.name)
+                            .font(.headline)
                         
-                        VStack(alignment: .leading) {
-                            Text(friend.name)
-                                .font(.headline)
-                            
-                            Text("Level \(friend.level)")
-                                .font(.footnote)
-                                .foregroundColor(.secondary)
-                        }
-                        Spacer()
-                        
-                        // Accept Button --------------------
-                        Button(action: {
-                            selectedFriend = friend
-                            acceptAlert = true
-                        }) {
-                            Image(systemName: "checkmark")
-                                .padding(.horizontal, 15)
-                        }
-                        .alert(isPresented: $acceptAlert) {
-                            Alert(
-                                title: Text("Terima Permintaan Pertemanan"),
-                                message: Text("Apakah Anda ingin menerima permintaan pertemanan dari \(selectedFriend?.name ?? "pengguna ini")?"),
-                                primaryButton: .default(Text("Terima")) {
-                                    if let friendToRemove = selectedFriend {
-                                        // Remove friend from the request list
-                                        if let index = friends.firstIndex(where: { $0.id == friendToRemove.id }) {
-                                            friends.remove(at: index)
-                                        }
-                                        // Optionally, add friend to your main friends list
-                                    }
-                                },
-                                secondaryButton: .cancel()
-                            )
-                        }
-                        .buttonStyle(BorderlessButtonStyle())
-                        
-                        // Reject Button ----------------
-                        Button(action: {
-                            selectedFriend = friend
-                            rejectAlert = true
-                        }) {
-                            Image(systemName: "xmark")
-                        }
-                        .buttonStyle(BorderlessButtonStyle())
-                        .alert(isPresented: $rejectAlert) {
-                            Alert(
-                                title: Text("Tolak Permintaan Pertemanan"),
-                                message: Text("Apakah Anda ingin menolak permintaan pertemanan dari \(selectedFriend?.name ?? "pengguna ini")?"),
-                                primaryButton: .destructive(Text("Tolak")) {
-                                    if let friendToRemove = selectedFriend {
-                                        // Remove friend from the request list
-                                        if let index = friends.firstIndex(where: { $0.id == friendToRemove.id }) {
-                                            friends.remove(at: index)
-                                        }
-                                    }
-                                },
-                                secondaryButton: .cancel()
-                            )
-                        }
+                        Text("Level \(friend.level)")
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
                     }
-                    .padding(.vertical, 8)
+                    Spacer()
+                    
+                    // Accept Button
+                    Button(action: {
+                        selectedFriend = friend
+                        acceptAlert = true
+                    }) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .foregroundColor(.green)
+                            .padding(4)
+                    }
+                    .buttonStyle(BorderlessButtonStyle())
+                    
+                    .alert(isPresented: $acceptAlert) {
+                        Alert(
+                            title: Text("Accept Friend Request"),
+                            message: Text("Do you want to accept the friend request from \(selectedFriend?.name ?? "this user")?"),
+                            primaryButton: .default(Text("Accept")) {
+                                if let friendToRemove = selectedFriend {
+                                    if let index = friends.firstIndex(where: { $0.id == friendToRemove.id }) {
+                                        friends.remove(at: index)
+                                    }
+                                }
+                            },
+                            secondaryButton: .cancel()
+                        )
+                    }
+                    
+                    // Reject Button
+                    Button(action: {
+                        selectedFriend = friend
+                        rejectAlert = true
+                    }) {
+                        Image(systemName: "xmark.circle.fill")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .foregroundColor(.red)
+                            .padding(4)
+                        
+                    }
+                    .buttonStyle(BorderlessButtonStyle())
+                    .alert(isPresented: $rejectAlert) {
+                        Alert(
+                            title: Text("Reject Friend Request"),
+                            message: Text("Do you want to reject the friend request from \(selectedFriend?.name ?? "this user")?"),
+                            primaryButton: .destructive(Text("Reject")) {
+                                if let friendToRemove = selectedFriend {
+                                    if let index = friends.firstIndex(where: { $0.id == friendToRemove.id }) {
+                                        friends.remove(at: index)
+                                    }
+                                }
+                            },
+                            secondaryButton: .cancel()
+                        )
+                    }
                 }
-                .listStyle(PlainListStyle())
-                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+                .padding(.vertical, 8)
             }
-            
-        }.navigationBarTitle("Request")
-            .navigationBarTitleDisplayMode(.inline)
+            .listStyle(PlainListStyle())
+        }
+        .navigationTitle("Request")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Color.white, for: .navigationBar)
     }
 }
+
 #Preview {
-    RequestFriendsView()
+    NavigationView{
+        RequestFriendsView()
+    }
 }

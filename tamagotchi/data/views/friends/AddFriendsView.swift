@@ -33,33 +33,33 @@ struct AddFriendsView: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack {
-                List(filteredFriends) { friend in
-                    HStack {
-                        Image(friend.avatar)
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.green, lineWidth: 1))
+        VStack {
+            List(filteredFriends) { friend in
+                HStack {
+                    Image(friend.avatar)
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.green, lineWidth: 2))
+                    
+                    VStack(alignment: .leading) {
+                        Text(friend.name)
+                            .font(.headline)
                         
-                        VStack(alignment: .leading) {
-                            Text(friend.name)
-                                .font(.headline)
-                            
-                            Text("Level " + String(friend.level))
-                                .font(.footnote)
-                                .foregroundColor(.secondary)
-                        }
-                        Spacer()
-                        Image(systemName: "plus")
+                        Text("Level " + String(friend.level))
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
                     }
-                    .padding(.vertical, 8)
+                    Spacer()
+                    Image(systemName: "plus")
+                        .padding(.horizontal)
+                        .foregroundColor(.green)
+                        .fontWeight(.bold)
                 }
-                .listStyle(PlainListStyle())
-                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+                .padding(.vertical, 8)
             }
-    
+            .listStyle(PlainListStyle())
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
         }
         .navigationBarTitleDisplayMode(.automatic)
         .navigationTitle("Add Friends")
@@ -68,5 +68,7 @@ struct AddFriendsView: View {
 }
 
 #Preview {
-    AddFriendsView()
+    NavigationStack {
+        AddFriendsView()
+    }
 }
