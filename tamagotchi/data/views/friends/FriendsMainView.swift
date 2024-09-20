@@ -1,33 +1,26 @@
 import SwiftUI
 
-struct Friend: Identifiable {
-    let id = UUID()
-    let name: String
-    let avatar: String
-    let level: Int
-}
-
 struct FriendsMainView: View {
     
     let friends = [
-        Friend(name: "Budiono Siregar", avatar: "fox-main", level: 25),
-        Friend(name: "Andre Onderdil", avatar: "idk", level: 10),
-        Friend(name: "Wahyu Kopling", avatar: "duck", level: 14),
-        Friend(name: "Ambatukam", avatar: "fox", level: 37),
-        Friend(name: "Mas Rusdi", avatar: "duck", level: 26),
-        Friend(name: "Farhan Kebab", avatar: "idk", level: 9),
-        Friend(name: "Joko Kemalaman", avatar: "fox", level: 31),
-        Friend(name: "Ahmad Bekasi", avatar: "duck", level: 19),
-        Friend(name: "Siti Tahu Bakso", avatar: "idk", level: 45),
-        Friend(name: "Dewi Lestari", avatar: "fox", level: 8),
-        Friend(name: "Hasan Keseimbangan", avatar: "duck", level: 22),
-        Friend(name: "Fauzan Raden", avatar: "idk", level: 33),
-        Friend(name: "Bambang Widi", avatar: "fox", level: 17),
-        Friend(name: "Novi Pangestu", avatar: "duck", level: 29),
-        Friend(name: "Ayu Cempaka", avatar: "idk", level: 15),
-        Friend(name: "Rio Satria", avatar: "fox", level: 27),
-        Friend(name: "Agus Santoso", avatar: "duck", level: 12),
-        Friend(name: "Dani Setiawan", avatar: "idk", level: 18),
+        Friend(name: "Budiono Siregar", avatar: "Fox", level: 25),
+        Friend(name: "Andre Onderdil", avatar: "rabbit", level: 10),
+        Friend(name: "Wahyu Kopling", avatar: "Fox", level: 14),
+        Friend(name: "Ambatukam", avatar: "rabbit", level: 37),
+        Friend(name: "Mas Rusdi", avatar: "Fox", level: 26),
+        Friend(name: "Farhan Kebab", avatar: "rabbit", level: 9),
+        Friend(name: "Bapack Rehan", avatar: "Fox", level: 31),
+        Friend(name: "Ahmad Bekasi", avatar: "Fox", level: 19),
+        Friend(name: "Siti Tahu Bakso", avatar: "rabbit", level: 45),
+        Friend(name: "Dewi Lestari", avatar: "Fox", level: 8),
+        Friend(name: "Hasan Keseimbangan", avatar: "Fox", level: 22),
+        Friend(name: "Fauzan Raden", avatar: "rabbit", level: 33),
+        Friend(name: "Bambang Widi", avatar: "Fox", level: 17),
+        Friend(name: "Novi Pangestu", avatar: "Fox", level: 29),
+        Friend(name: "Ayu Cempaka", avatar: "rabbit", level: 15),
+        Friend(name: "Rio Satria", avatar: "Fox", level: 27),
+        Friend(name: "Agus Santoso", avatar: "Fox", level: 12),
+        Friend(name: "Dani Setiawan", avatar: "rabbit", level: 18),
     ]
     
     @State private var searchText = ""
@@ -46,12 +39,13 @@ struct FriendsMainView: View {
                 List(filteredFriends) { friend in
                     HStack {
                         NavigationLink(destination: MeetFriendsView(friend: friend)) {
-                            Image(friend.avatar)
+                            Image("\(friend.avatar)1")
                                 .resizable()
-                                .aspectRatio(contentMode: .fit)
+                                .scaledToFill()
                                 .frame(width: 40, height: 40)
                                 .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.green, lineWidth: 2))
+                                .overlay(Circle().stroke(Color.skyblue, lineWidth: 1.5))
+                                .contentShape(Circle())
                             
                             VStack(alignment: .leading) {
                                 Text(friend.name)
@@ -77,7 +71,7 @@ struct FriendsMainView: View {
                                 .frame(height: 55)
                                 .padding(.horizontal, 30)
                                 .padding(.vertical, 30)
-                                .foregroundColor(.green)
+                                .foregroundColor(.teal)
                             
                             Image(systemName: "plus")
                                 .font(.system(size: 25, weight: .bold))
@@ -92,7 +86,7 @@ struct FriendsMainView: View {
             .toolbar {
                 NavigationLink(destination: RequestFriendsView()) {
                     Image(systemName: "person.badge.clock.fill")
-                        .foregroundColor(.green)
+                        .foregroundColor(.teal)
                 }
             }
         }

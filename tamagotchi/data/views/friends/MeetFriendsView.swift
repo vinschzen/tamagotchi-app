@@ -1,15 +1,10 @@
-//
-//  MeetFriendsView.swift
-//  tamagotchi
-//
-//  Created by MacBook Pro on 18/09/24.
-//
-
 import SwiftUI
 
 struct MeetFriendsView: View {
     
     var friend: Friend
+    @State var Rabbit : String = ""
+    
     
     var body: some View {
         VStack {
@@ -19,12 +14,11 @@ struct MeetFriendsView: View {
                 .fontWeight(.bold)
                 .padding(.bottom, 30)
             
-            Image("fox-main")
+            Image(Rabbit)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 170)
-                .padding(.bottom, 30)
-            
+                .scaledToFit()
+                .frame(width: 400, alignment: .center)
+                .onAppear(perform: timerRabbit)
             
             
             ProgressView(value: Float(friend.level) / 100)
@@ -33,7 +27,7 @@ struct MeetFriendsView: View {
                 .padding(.bottom, 15)
             
             Text("Level \(friend.level)")
-                .font(.title3)
+                .fontWeight(.semibold)
                 .padding(.bottom, 50)
             
             
@@ -61,10 +55,27 @@ struct MeetFriendsView: View {
         .navigationBarTitleDisplayMode(.inline)
         .tabViewStyle(.automatic)
     }
+    
+    
+    func timerRabbit(){
+        
+        var index = 1
+        _ = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true) { (Timer) in
+            
+            Rabbit = "\(friend.avatar)\(index)"
+            
+            index += 1
+            
+            if (index > 9){
+                index = 1
+                
+            }
+        }
+    }
 }
 
 #Preview {
     NavigationStack {
-        MeetFriendsView(friend: Friend(name: "Sample Friend", avatar: "fox", level: 20))
+        MeetFriendsView(friend: Friend(name: "Sample Friend", avatar: "Fox", level: 20))
     }
 }
