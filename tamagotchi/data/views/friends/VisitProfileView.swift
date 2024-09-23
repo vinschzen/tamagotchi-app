@@ -1,13 +1,18 @@
+//
+//  VisitProfileView.swift
+//  tamagotchi
+//
+//  Created by MacBook Pro on 21/09/24.
+//
+
 import SwiftUI
 
-struct MeetFriendsView: View {
-    
+struct VisitProfileView: View {
     var friend: Friend
     @State var pet : String = ""
     
     var body: some View {
         VStack {
-            
             Spacer()
             
             Text(friend.name)
@@ -29,27 +34,22 @@ struct MeetFriendsView: View {
             Text("Level \(friend.level)")
                 .fontWeight(.semibold)
                 .padding(.bottom, 50)
+            
             Button(action: {
                 // Action for sending a reminder
             }) {
-                Image(systemName: "exclamationmark.circle")
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .scaledToFit()
+                Text("Add Friend")
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             }
-            .padding()
             .frame(width: 130, height: 55)
             .foregroundColor(.white)
             .background(.navy)
             .cornerRadius(12)
-
-            Text("Send Reminder")
-                .fontWeight(.semibold)
-                .padding(.bottom, 50)
-            
             Spacer()
+
         }
-        .navigationTitle("Meet Your Friend")
+        .padding(.bottom, 60)
+        .navigationTitle("Visit Profile")
         .navigationBarTitleDisplayMode(.inline)
         .tabViewStyle(.automatic)
         .background(
@@ -87,6 +87,6 @@ struct MeetFriendsView: View {
 
 #Preview {
     NavigationStack {
-        MeetFriendsView(friend: Friend(name: "Sample Friend", avatar: "Fox", level: 20))
+        VisitProfileView(friend: Friend(name: "Sample Friend", avatar: "Fox", level: 20))
     }
 }

@@ -35,5 +35,5 @@ extension View {
 
 struct Toast: Equatable{
     let message: String
-    let duration: Double = 2.0
+    let duration: Double = 1.0
 }

@@ -43,10 +43,10 @@ struct AddFriendsView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 40, height: 40)
+                        .background(Color.beige)
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.skyblue, lineWidth: 1.5))
+                        .overlay(Circle().stroke(Color.teal, lineWidth: 1.5))
                         .contentShape(Circle())
-                    
                     
                     VStack(alignment: .leading) {
                         Text(friend.name)
@@ -58,7 +58,6 @@ struct AddFriendsView: View {
                     }
                     Spacer()
                     
-                    // Button to send friend request or show pending status
                     if pendingRequests[friend.id] == true {
                         HStack {
                             Image(systemName: "hourglass")
@@ -73,9 +72,10 @@ struct AddFriendsView: View {
                         }) {
                             Image(systemName: "plus")
                                 .padding(.horizontal)
-                                .foregroundColor(.teal)
+                                .foregroundColor(.navy)
                                 .fontWeight(.bold)
                         }
+                        .buttonStyle(BorderlessButtonStyle())
                         .alert(isPresented: $showAlert) {
                             Alert(
                                 title: Text("Send Request"),
@@ -91,6 +91,10 @@ struct AddFriendsView: View {
                     }
                 }
                 .padding(.vertical, 8)
+                .background(
+                    NavigationLink("", destination: VisitProfileView(friend: friend))
+                        .opacity(0)
+                )
             }
             .listStyle(PlainListStyle())
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))

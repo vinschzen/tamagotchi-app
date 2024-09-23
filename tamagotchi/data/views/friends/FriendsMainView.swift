@@ -43,8 +43,9 @@ struct FriendsMainView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 40, height: 40)
+                                .background(.beige)
                                 .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.skyblue, lineWidth: 1.5))
+                                .overlay(Circle().stroke(Color.teal, lineWidth: 1.5))
                                 .contentShape(Circle())
                             
                             VStack(alignment: .leading) {
@@ -71,7 +72,7 @@ struct FriendsMainView: View {
                                 .frame(height: 55)
                                 .padding(.horizontal, 30)
                                 .padding(.vertical, 30)
-                                .foregroundColor(.teal)
+                                .foregroundColor(.navy)
                             
                             Image(systemName: "plus")
                                 .font(.system(size: 25, weight: .bold))
@@ -86,7 +87,7 @@ struct FriendsMainView: View {
             .toolbar {
                 NavigationLink(destination: RequestFriendsView()) {
                     Image(systemName: "person.badge.clock.fill")
-                        .foregroundColor(.teal)
+                        .foregroundColor(.navy)
                 }
             }
         }

@@ -45,8 +45,9 @@ struct RequestFriendsView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 40, height: 40)
+                        .background(.beige)
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.skyblue, lineWidth: 1.5))
+                        .overlay(Circle().stroke(Color.teal, lineWidth: 1.5))
                         .contentShape(Circle())
                     
                     VStack(alignment: .leading) {
@@ -118,6 +119,10 @@ struct RequestFriendsView: View {
                     }
                 }
                 .padding(.vertical, 8)
+                .background(
+                    NavigationLink("", destination: VisitProfileView(friend: friend))
+                        .opacity(0)
+                )
             }
             .listStyle(PlainListStyle())
         }
