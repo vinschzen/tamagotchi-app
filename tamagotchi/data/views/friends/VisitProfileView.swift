@@ -100,6 +100,8 @@ struct VisitProfileView: View {
             maxIndex = 14
         } else if friend.avatar == "rabbit" {
             maxIndex = 9
+        } else if friend.avatar == "axolotl" {
+            maxIndex = 2
         }
         
         _ = Timer.scheduledTimer(withTimeInterval: 0.20, repeats: true) { _ in

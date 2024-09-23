@@ -3,24 +3,24 @@ import SwiftUI
 struct RequestFriendsView: View {
     
     @State private var friends = [
-        Friend(name: "Budiono Siregar", avatar: "Fox", level: 25),
-        Friend(name: "Andre Onderdil", avatar: "rabbit", level: 10),
-        Friend(name: "Wahyu Kopling", avatar: "Fox", level: 14),
-        Friend(name: "Ambatukam", avatar: "rabbit", level: 37),
-        Friend(name: "Mas Rusdi", avatar: "Fox", level: 26),
-        Friend(name: "Farhan Kebab", avatar: "rabbit", level: 9),
-        Friend(name: "Bapack Rehan", avatar: "Fox", level: 31),
-        Friend(name: "Ahmad Bekasi", avatar: "Fox", level: 19),
-        Friend(name: "Siti Tahu Bakso", avatar: "rabbit", level: 45),
-        Friend(name: "Dewi Lestari", avatar: "Fox", level: 8),
-        Friend(name: "Hasan Keseimbangan", avatar: "Fox", level: 22),
-        Friend(name: "Fauzan Raden", avatar: "rabbit", level: 33),
-        Friend(name: "Bambang Widi", avatar: "Fox", level: 17),
-        Friend(name: "Novi Pangestu", avatar: "Fox", level: 29),
-        Friend(name: "Ayu Cempaka", avatar: "rabbit", level: 15),
-        Friend(name: "Rio Satria", avatar: "Fox", level: 27),
-        Friend(name: "Agus Santoso", avatar: "Fox", level: 12),
-        Friend(name: "Johanes Siskampling", avatar: "rabbit", level: 18),
+        Friend(name: "Vina Kurnia", avatar: "axolotl", level: 23),
+        Friend(name: "Wawan Setiawan", avatar: "rabbit", level: 11),
+        Friend(name: "Yanto Wijaya", avatar: "Fox", level: 27),
+        Friend(name: "Zahra Maulida", avatar: "axolotl", level: 10),
+        Friend(name: "Andi Prasetyo", avatar: "Fox", level: 32),
+        Friend(name: "Bella Anggraini", avatar: "Fox", level: 20),
+        Friend(name: "Cahyo Saputro", avatar: "axolotl", level: 46),
+        Friend(name: "Dian Lestari", avatar: "Fox", level: 9),
+        Friend(name: "Edi Purwanto", avatar: "Fox", level: 24),
+        Friend(name: "Farah Putri", avatar: "rabbit", level: 34),
+        Friend(name: "Gilang Ramadhan", avatar: "axolotl", level: 18),
+        Friend(name: "Hanafi", avatar: "Fox", level: 30),
+        Friend(name: "Intan Permatasari", avatar: "rabbit", level: 16),
+        Friend(name: "Junaedi", avatar: "axolotl", level: 28),
+        Friend(name: "Kiki Amelia", avatar: "Fox", level: 13),
+        Friend(name: "Lia Kusuma", avatar: "axolotl", level: 19),
+        Friend(name: "Maria Ulfah", avatar: "Fox", level: 22),
+        Friend(name: "Novi Andriani", avatar: "axolotl", level: 17),    
     ]
     
     @State private var searchText = ""
@@ -72,7 +72,7 @@ struct RequestFriendsView: View {
                             .padding(4)
                     }
                     .buttonStyle(BorderlessButtonStyle())
-                
+                    
                     .alert(isPresented: $acceptAlert) {
                         Alert(
                             title: Text("Accept Friend Request"),
