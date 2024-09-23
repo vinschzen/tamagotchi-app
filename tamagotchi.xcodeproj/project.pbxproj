@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		0428D6B32C9D31E000C748FA /* PetShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428D6B22C9D31E000C748FA /* PetShop.swift */; };
+=======
+		0465D5452C9BD85000765D53 /* Step1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5442C9BD85000765D53 /* Step1View.swift */; };
+		0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5462C9BD85B00765D53 /* Step2View.swift */; };
+		0465D5492C9BD86300765D53 /* Step3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5482C9BD86300765D53 /* Step3View.swift */; };
+		0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5652C9D727400765D53 /* DotProgressView.swift */; };
+		0465D5682C9D76F900765D53 /* GetStartedView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5672C9D76F900765D53 /* GetStartedView2.swift */; };
+>>>>>>> cf58e38 (added carousel on profiling)
 		049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E02C912ECA0071854C /* tamagotchiApp.swift */; };
 		049A22E32C912ECA0071854C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E22C912ECA0071854C /* ContentView.swift */; };
 		049A22E52C912ECA0071854C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E42C912ECA0071854C /* Item.swift */; };
@@ -20,7 +28,6 @@
 		049A23182C9136B60071854C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23172C9136B60071854C /* TaskItem.swift */; };
 		049A231C2C9138460071854C /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231B2C9138460071854C /* TaskList.swift */; };
 		049A231E2C91393F0071854C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231D2C91393F0071854C /* LoginView.swift */; };
-		049A23202C913F2D0071854C /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231F2C913F2D0071854C /* GetStartedView.swift */; };
 		049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23242C9143340071854C /* FirebaseAnalytics */; };
 		049A23312C9299000071854C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23302C9299000071854C /* FirebaseDatabase */; };
 		049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23342C93CD260071854C /* TaskListHomeView.swift */; };
@@ -77,7 +84,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		0428D6B22C9D31E000C748FA /* PetShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShop.swift; sourceTree = "<group>"; };
+=======
+		0465D5442C9BD85000765D53 /* Step1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1View.swift; sourceTree = "<group>"; };
+		0465D5462C9BD85B00765D53 /* Step2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2View.swift; sourceTree = "<group>"; };
+		0465D5482C9BD86300765D53 /* Step3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3View.swift; sourceTree = "<group>"; };
+		0465D5652C9D727400765D53 /* DotProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProgressView.swift; sourceTree = "<group>"; };
+		0465D5672C9D76F900765D53 /* GetStartedView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView2.swift; sourceTree = "<group>"; };
+>>>>>>> cf58e38 (added carousel on profiling)
 		049A22DD2C912ECA0071854C /* tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tamagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049A22E02C912ECA0071854C /* tamagotchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiApp.swift; sourceTree = "<group>"; };
 		049A22E22C912ECA0071854C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,7 +110,6 @@
 		049A23172C9136B60071854C /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		049A231B2C9138460071854C /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		049A231D2C91393F0071854C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		049A231F2C913F2D0071854C /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
 		049A23342C93CD260071854C /* TaskListHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListHomeView.swift; sourceTree = "<group>"; };
 		049A23422C93E2650071854C /* PetMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMainView.swift; sourceTree = "<group>"; };
 		049A23442C93E2CB0071854C /* FriendsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMainView.swift; sourceTree = "<group>"; };
@@ -268,7 +282,11 @@
 		049A233B2C93DB330071854C /* profiling */ = {
 			isa = PBXGroup;
 			children = (
-				049A231F2C913F2D0071854C /* GetStartedView.swift */,
+				0465D5672C9D76F900765D53 /* GetStartedView2.swift */,
+				0465D5442C9BD85000765D53 /* Step1View.swift */,
+				0465D5462C9BD85B00765D53 /* Step2View.swift */,
+				0465D5482C9BD86300765D53 /* Step3View.swift */,
+				0465D5652C9D727400765D53 /* DotProgressView.swift */,
 			);
 			path = profiling;
 			sourceTree = "<group>";
@@ -494,8 +512,15 @@
 				049A23432C93E2650071854C /* PetMainView.swift in Sources */,
 				04FF3B912C9AFC7100F0C0D7 /* ConfettiElement.swift in Sources */,
 				049A23472C93E3940071854C /* HomeView.swift in Sources */,
+<<<<<<< HEAD
 				04FF3B972C9BDF6200F0C0D7 /* TaskListSharedView.swift in Sources */,
+=======
+				0465D5682C9D76F900765D53 /* GetStartedView2.swift in Sources */,
+				0465D5452C9BD85000765D53 /* Step1View.swift in Sources */,
+>>>>>>> cf58e38 (added carousel on profiling)
 				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
+				0465D5492C9BD86300765D53 /* Step3View.swift in Sources */,
+				0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */,
 				049A230E2C9130860071854C /* User.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
 <<<<<<< HEAD
@@ -504,7 +529,11 @@
 				04A2CFE22CA138D20061DCC2 /* AnimatedImage.swift in Sources */,
 >>>>>>> fe83a79 (pet screen)
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+<<<<<<< HEAD
 				04FF3B952C9BCF8800F0C0D7 /* TaskManager.swift in Sources */,
+=======
+				0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */,
+>>>>>>> cf58e38 (added carousel on profiling)
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
 				049BD1E02CA111AD0051EB42 /* SharedRowView.swift in Sources */,
 				04FF3B8E2C9AEF1900F0C0D7 /* ProcessRowView.swift in Sources */,
@@ -515,9 +544,12 @@
 				049A22E52C912ECA0071854C /* Item.swift in Sources */,
 				0428D6B32C9D31E000C748FA /* PetShop.swift in Sources */,
 				049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */,
+<<<<<<< HEAD
 				049A23202C913F2D0071854C /* GetStartedView.swift in Sources */,
 				049BD1E22CA1149F0051EB42 /* ThreeDots.swift in Sources */,
 				049FB7452CA0F49800D99714 /* OtherView.swift in Sources */,
+=======
+>>>>>>> cf58e38 (added carousel on profiling)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
