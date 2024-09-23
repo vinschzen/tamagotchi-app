@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0465D5452C9BD85000765D53 /* Step1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5442C9BD85000765D53 /* Step1View.swift */; };
+		0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5462C9BD85B00765D53 /* Step2View.swift */; };
+		0465D5492C9BD86300765D53 /* Step3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5482C9BD86300765D53 /* Step3View.swift */; };
+		0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5652C9D727400765D53 /* DotProgressView.swift */; };
+		0465D5682C9D76F900765D53 /* GetStartedView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5672C9D76F900765D53 /* GetStartedView2.swift */; };
 		049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E02C912ECA0071854C /* tamagotchiApp.swift */; };
 		049A22E32C912ECA0071854C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E22C912ECA0071854C /* ContentView.swift */; };
 		049A22E52C912ECA0071854C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E42C912ECA0071854C /* Item.swift */; };
@@ -21,7 +26,6 @@
 		049A23182C9136B60071854C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23172C9136B60071854C /* TaskItem.swift */; };
 		049A231C2C9138460071854C /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231B2C9138460071854C /* TaskList.swift */; };
 		049A231E2C91393F0071854C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231D2C91393F0071854C /* LoginView.swift */; };
-		049A23202C913F2D0071854C /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231F2C913F2D0071854C /* GetStartedView.swift */; };
 		049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23242C9143340071854C /* FirebaseAnalytics */; };
 		049A23312C9299000071854C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23302C9299000071854C /* FirebaseDatabase */; };
 		049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23342C93CD260071854C /* TaskListHomeView.swift */; };
@@ -52,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0465D5442C9BD85000765D53 /* Step1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1View.swift; sourceTree = "<group>"; };
+		0465D5462C9BD85B00765D53 /* Step2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2View.swift; sourceTree = "<group>"; };
+		0465D5482C9BD86300765D53 /* Step3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3View.swift; sourceTree = "<group>"; };
+		0465D5652C9D727400765D53 /* DotProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProgressView.swift; sourceTree = "<group>"; };
+		0465D5672C9D76F900765D53 /* GetStartedView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView2.swift; sourceTree = "<group>"; };
 		049A22DD2C912ECA0071854C /* tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tamagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049A22E02C912ECA0071854C /* tamagotchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiApp.swift; sourceTree = "<group>"; };
 		049A22E22C912ECA0071854C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,7 +78,6 @@
 		049A23172C9136B60071854C /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		049A231B2C9138460071854C /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		049A231D2C91393F0071854C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		049A231F2C913F2D0071854C /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
 		049A23342C93CD260071854C /* TaskListHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListHomeView.swift; sourceTree = "<group>"; };
 		049A23422C93E2650071854C /* PetMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMainView.swift; sourceTree = "<group>"; };
 		049A23442C93E2CB0071854C /* FriendsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMainView.swift; sourceTree = "<group>"; };
@@ -204,7 +212,11 @@
 		049A233B2C93DB330071854C /* profiling */ = {
 			isa = PBXGroup;
 			children = (
-				049A231F2C913F2D0071854C /* GetStartedView.swift */,
+				0465D5672C9D76F900765D53 /* GetStartedView2.swift */,
+				0465D5442C9BD85000765D53 /* Step1View.swift */,
+				0465D5462C9BD85B00765D53 /* Step2View.swift */,
+				0465D5482C9BD86300765D53 /* Step3View.swift */,
+				0465D5652C9D727400765D53 /* DotProgressView.swift */,
 			);
 			path = profiling;
 			sourceTree = "<group>";
@@ -387,17 +399,21 @@
 				04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */,
 				049A23432C93E2650071854C /* PetMainView.swift in Sources */,
 				049A23472C93E3940071854C /* HomeView.swift in Sources */,
+				0465D5682C9D76F900765D53 /* GetStartedView2.swift in Sources */,
+				0465D5452C9BD85000765D53 /* Step1View.swift in Sources */,
 				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
+				0465D5492C9BD86300765D53 /* Step3View.swift in Sources */,
+				0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */,
 				049A230E2C9130860071854C /* User.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+				0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */,
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
 				049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */,
 				049A23182C9136B60071854C /* TaskItem.swift in Sources */,
 				049A23122C9133810071854C /* Notification.swift in Sources */,
 				049A22E52C912ECA0071854C /* Item.swift in Sources */,
 				049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */,
-				049A23202C913F2D0071854C /* GetStartedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
