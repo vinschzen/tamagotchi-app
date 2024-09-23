@@ -1,16 +1,19 @@
-//
-//  VisitProfileView.swift
-//  tamagotchi
-//
-//  Created by MacBook Pro on 21/09/24.
-//
-
 import SwiftUI
 
 struct VisitProfileView: View {
     var friend: Friend
-    @State var pet : String = ""
-    
+    @State private var pet: String = ""
+    @State private var toogleAddFriend = false
+    @State private var activeAlert: ActiveAlert?
+
+    enum ActiveAlert: Identifiable {
+        case sendRequest, cancelRequest
+
+        var id: Int {
+            hashValue
+        }
+    }
+
     var body: some View {
         VStack {
             Spacer()
@@ -36,17 +39,46 @@ struct VisitProfileView: View {
                 .padding(.bottom, 50)
             
             Button(action: {
-                // Action for sending a reminder
+                if toogleAddFriend {
+                    // Prompt to cancel friend request
+                    activeAlert = .cancelRequest
+                } else {
+                    // Prompt to send friend request
+                    activeAlert = .sendRequest
+                }
             }) {
-                Text("Add Friend")
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Text(toogleAddFriend ? "Request has been sent" : "Add Friend")
+                    .fontWeight(.bold)
             }
-            .frame(width: 130, height: 55)
+            .frame(width: 220, height: 55)
             .foregroundColor(.white)
-            .background(.navy)
+            .background(toogleAddFriend ? Color.teal : Color.navy)
             .cornerRadius(12)
+            .buttonStyle(BorderlessButtonStyle())
+            .alert(item: $activeAlert) { alert in
+                switch alert {
+                case .sendRequest:
+                    return Alert(
+                        title: Text("Send Friend Request"),
+                        message: Text("Send a friend request to \(friend.name)?"),
+                        primaryButton: .default(Text("Send")) {
+                            toogleAddFriend = true
+                        },
+                        secondaryButton: .cancel()
+                    )
+                case .cancelRequest:
+                    return Alert(
+                        title: Text("Cancel Friend Request"),
+                        message: Text("Cancel the friend request to \(friend.name)?"),
+                        primaryButton: .destructive(Text("Cancel Request")) {
+                            toogleAddFriend = false
+                        },
+                        secondaryButton: .cancel()
+                    )
+                }
+            }
+            
             Spacer()
-
         }
         .padding(.bottom, 60)
         .navigationTitle("Visit Profile")
@@ -59,26 +91,21 @@ struct VisitProfileView: View {
                            endRadius: 500)
         )
     }
-    
-    
-    func timerPet(){
-        
+
+    func timerPet() {
         var index = 1
         var maxIndex = 0
         
-        if (friend.avatar == "Fox") {
+        if friend.avatar == "Fox" {
             maxIndex = 14
-        } else if (friend.avatar == "rabbit") {
+        } else if friend.avatar == "rabbit" {
             maxIndex = 9
         }
         
-        _ = Timer.scheduledTimer(withTimeInterval: 0.20, repeats: true) { (Timer) in
-            
+        _ = Timer.scheduledTimer(withTimeInterval: 0.20, repeats: true) { _ in
             pet = "\(friend.avatar)\(index)"
-            
             index += 1
-            
-            if (index > maxIndex) {
+            if index > maxIndex {
                 index = 1
             }
         }

@@ -60,11 +60,10 @@ struct AddFriendsView: View {
                     
                     if pendingRequests[friend.id] == true {
                         HStack {
-                            Image(systemName: "hourglass")
-                            Text("Pending")
+                            Image(systemName: "paperplane")
                         }
                         .padding(.horizontal)
-                        .foregroundColor(.orange)
+                        .foregroundColor(.teal)
                     } else {
                         Button(action: {
                             selectedFriend = friend
