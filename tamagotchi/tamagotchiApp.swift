@@ -24,6 +24,8 @@ struct tamagotchiApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
+            TaskList.self,
+            TaskItem.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -36,7 +38,7 @@ struct tamagotchiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            GetStartedView2()
             //app start
         }
         .modelContainer(sharedModelContainer)
@@ -44,6 +46,6 @@ struct tamagotchiApp: App {
 }
 
 #Preview {
-    HomeView()
+    GetStartedView2()
         .modelContainer(for: Item.self, inMemory: true)
 }
