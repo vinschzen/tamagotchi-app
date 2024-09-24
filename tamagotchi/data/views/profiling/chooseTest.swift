@@ -9,7 +9,7 @@ import SwiftUI
 
 struct chooseTest: View {
     @State private var selectedPlans: Set<String> = []
-
+    @State var areas: String?
     let plansDBH = [
         "Run 1 Miles 🏃‍♂️",
         "Drink Water 💧",
@@ -19,6 +19,7 @@ struct chooseTest: View {
         "Sleep Early 🛌",
         "Yoga 🧘‍♂️",
         "Digital Detox 📵",
+        "ror 📵",
     ]
     
     let plansBP = [
@@ -51,21 +52,48 @@ struct chooseTest: View {
                 .padding(.top, 40.0)
             
             Spacer()
+            
+            if (areas == "bp"){
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                    ForEach(0..<plansBP.count, id: \.self) { index in
+                        PlanButton(
+                            title: plansBP[index],
+                            isSelected: selectedPlans.contains(plansBP[index]),
+                            toggleSelection: { togglePlan(plansBP[index]) }
+                        )
+                    }
+                }
+                .padding()
+
+            }
+            else if (areas == "dbh"){
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                    ForEach(0..<plansDBH.count, id: \.self) { index in
+                        PlanButton(
+                            title: plansDBH[index],
+                            isSelected: selectedPlans.contains(plansDBH[index]),
+                            toggleSelection: { togglePlan(plansDBH[index]) }
+                        )
+                    }
+                }
+                .padding()
+            }
+            else if(areas == "is"){
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                    ForEach(0..<plansIS.count, id: \.self) { index in
+                        PlanButton(
+                            title: plansIS[index],
+                            isSelected: selectedPlans.contains(plansIS[index]),
+                            toggleSelection: { togglePlan(plansIS[index]) }
+                        )
+                    }
+                }
+                .padding()
+
+            }
 
             // 2x2 grid layout
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                ForEach(0..<plansDBH.count, id: \.self) { index in
-                    PlanButton(title: plansDBH[index], isSelected: selectedPlans.contains(plansDBH[index]), toggleSelection: { togglePlan(plansDBH[index]) })
-                }
-
-                // Add a transparent placeholder if the number of items is odd to keep the grid centered
-                if plansDBH.count % 2 != 0 {
-                    Color.clear
-                        .frame(height: 0) // Transparent placeholder to keep the layout even
-                }
-            }
-            .padding()
-
+            
             Spacer()
 
             Button(action: {

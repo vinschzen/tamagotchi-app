@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Step3View: View {
+struct ChooseBPView: View {
     var body: some View {
         NavigationStack{
             VStack(alignment:.leading) {
@@ -224,12 +224,16 @@ struct Step3View: View {
             
             Spacer()
             Text("Step 3 of 3")
+                .navigationBarTitle("")
+                .navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)
 
     }
+    
 
     }
 }
 
 #Preview {
-    Step3View()
+    ChooseBPView()
 }

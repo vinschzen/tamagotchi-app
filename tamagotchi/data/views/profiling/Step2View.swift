@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Step2View: View {
+    
+    @State var areas: String?
+    
     var body: some View {
         NavigationStack{
             VStack(alignment:.leading) {
@@ -16,8 +19,6 @@ struct Step2View: View {
                     .font(.system(size: 40, weight: .bold))
                     .padding([.top, .leading], 20.0)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                
-                
             }
             VStack{
                 Text("Tips :")
@@ -26,17 +27,13 @@ struct Step2View: View {
                     .multilineTextAlignment(.center)
                 
                 Button(action: {
-                    
+//                    areas = "bp"
                 }, label:{
-                    NavigationLink(destination: ChooseBPView()){
+                    NavigationLink(destination: chooseTest(areas: "bp")){
                         Text("Boost Productivity")
                             .padding()
-                        // 1
                             .foregroundColor(.white)
-                        
-                        // 2
                             .background(
-                                
                                 RoundedRectangle(
                                     cornerRadius: 15,
                                     style: .continuous
@@ -50,7 +47,7 @@ struct Step2View: View {
                 Button(action: {
                     
                 }, label:{
-                    NavigationLink(destination: ChooseDBHView()){
+                    NavigationLink(destination: chooseTest(areas: "dbh")){
                         Text("Detox Bad Habits")
                             .padding()
                         // 1
@@ -73,7 +70,7 @@ struct Step2View: View {
                 Button(action: {
                     
                 }, label:{
-                    NavigationLink(destination: ChooseISView()){
+                    NavigationLink(destination: chooseTest(areas: "is")){
                         Text("Improve Study")
                             .padding()
                         // 1
