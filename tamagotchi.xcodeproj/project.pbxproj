@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0465D5452C9BD85000765D53 /* Step1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5442C9BD85000765D53 /* Step1View.swift */; };
+		0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5462C9BD85B00765D53 /* Step2View.swift */; };
+		0465D5492C9BD86300765D53 /* ChooseBPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5482C9BD86300765D53 /* ChooseBPView.swift */; };
+		0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5652C9D727400765D53 /* DotProgressView.swift */; };
+		0465D5682C9D76F900765D53 /* GetStartedView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5672C9D76F900765D53 /* GetStartedView2.swift */; };
+		0465D56A2CA127D300765D53 /* ChooseDBHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5692CA127D300765D53 /* ChooseDBHView.swift */; };
+		0465D56C2CA128D900765D53 /* ChooseISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D56B2CA128D900765D53 /* ChooseISView.swift */; };
+		0465D56E2CA15FDB00765D53 /* chooseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D56D2CA15FDB00765D53 /* chooseTest.swift */; };
 		049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E02C912ECA0071854C /* tamagotchiApp.swift */; };
 		049A22E32C912ECA0071854C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E22C912ECA0071854C /* ContentView.swift */; };
 		049A22E52C912ECA0071854C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E42C912ECA0071854C /* Item.swift */; };
@@ -21,7 +29,6 @@
 		049A23182C9136B60071854C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23172C9136B60071854C /* TaskItem.swift */; };
 		049A231C2C9138460071854C /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231B2C9138460071854C /* TaskList.swift */; };
 		049A231E2C91393F0071854C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231D2C91393F0071854C /* LoginView.swift */; };
-		049A23202C913F2D0071854C /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231F2C913F2D0071854C /* GetStartedView.swift */; };
 		049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23242C9143340071854C /* FirebaseAnalytics */; };
 		049A23312C9299000071854C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23302C9299000071854C /* FirebaseDatabase */; };
 		049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23342C93CD260071854C /* TaskListHomeView.swift */; };
@@ -30,7 +37,7 @@
 		049A23472C93E3940071854C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23462C93E3940071854C /* HomeView.swift */; };
 		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
 		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
-		04FF3B842C9AB71600F0C0D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FF3B832C9AB71600F0C0D7 /* GoogleService-Info.plist */; };
+		04BC84252C9BCC9300F90E0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */; };
 		04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +59,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0465D5442C9BD85000765D53 /* Step1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1View.swift; sourceTree = "<group>"; };
+		0465D5462C9BD85B00765D53 /* Step2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2View.swift; sourceTree = "<group>"; };
+		0465D5482C9BD86300765D53 /* ChooseBPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBPView.swift; sourceTree = "<group>"; };
+		0465D5652C9D727400765D53 /* DotProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProgressView.swift; sourceTree = "<group>"; };
+		0465D5672C9D76F900765D53 /* GetStartedView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView2.swift; sourceTree = "<group>"; };
+		0465D5692CA127D300765D53 /* ChooseDBHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDBHView.swift; sourceTree = "<group>"; };
+		0465D56B2CA128D900765D53 /* ChooseISView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseISView.swift; sourceTree = "<group>"; };
+		0465D56D2CA15FDB00765D53 /* chooseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseTest.swift; sourceTree = "<group>"; };
 		049A22DD2C912ECA0071854C /* tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tamagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049A22E02C912ECA0071854C /* tamagotchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiApp.swift; sourceTree = "<group>"; };
 		049A22E22C912ECA0071854C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,14 +84,13 @@
 		049A23172C9136B60071854C /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		049A231B2C9138460071854C /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		049A231D2C91393F0071854C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		049A231F2C913F2D0071854C /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
 		049A23342C93CD260071854C /* TaskListHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListHomeView.swift; sourceTree = "<group>"; };
 		049A23422C93E2650071854C /* PetMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMainView.swift; sourceTree = "<group>"; };
 		049A23442C93E2CB0071854C /* FriendsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMainView.swift; sourceTree = "<group>"; };
 		049A23462C93E3940071854C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
 		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
-		04FF3B832C9AB71600F0C0D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +144,7 @@
 		049A22DF2C912ECA0071854C /* tamagotchi */ = {
 			isa = PBXGroup;
 			children = (
-				04FF3B832C9AB71600F0C0D7 /* GoogleService-Info.plist */,
+				04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */,
 				049A230C2C9130670071854C /* data */,
 				049A22E02C912ECA0071854C /* tamagotchiApp.swift */,
 				049A231D2C91393F0071854C /* LoginView.swift */,
@@ -204,7 +218,14 @@
 		049A233B2C93DB330071854C /* profiling */ = {
 			isa = PBXGroup;
 			children = (
-				049A231F2C913F2D0071854C /* GetStartedView.swift */,
+				0465D5672C9D76F900765D53 /* GetStartedView2.swift */,
+				0465D5442C9BD85000765D53 /* Step1View.swift */,
+				0465D5462C9BD85B00765D53 /* Step2View.swift */,
+				0465D5482C9BD86300765D53 /* ChooseBPView.swift */,
+				0465D5692CA127D300765D53 /* ChooseDBHView.swift */,
+				0465D56B2CA128D900765D53 /* ChooseISView.swift */,
+				0465D5652C9D727400765D53 /* DotProgressView.swift */,
+				0465D56D2CA15FDB00765D53 /* chooseTest.swift */,
 			);
 			path = profiling;
 			sourceTree = "<group>";
@@ -355,9 +376,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				049A22EA2C912ECB0071854C /* Preview Assets.xcassets in Resources */,
-				04F4B8272C9A85500051EC9E /* GoogleService-Info.plist in Resources */,
 				049A22E72C912ECB0071854C /* Assets.xcassets in Resources */,
-				04FF3B842C9AB71600F0C0D7 /* GoogleService-Info.plist in Resources */,
+				04BC84252C9BCC9300F90E0A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,17 +408,24 @@
 				04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */,
 				049A23432C93E2650071854C /* PetMainView.swift in Sources */,
 				049A23472C93E3940071854C /* HomeView.swift in Sources */,
+				0465D5682C9D76F900765D53 /* GetStartedView2.swift in Sources */,
+				0465D5452C9BD85000765D53 /* Step1View.swift in Sources */,
 				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
+				0465D5492C9BD86300765D53 /* ChooseBPView.swift in Sources */,
+				0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */,
 				049A230E2C9130860071854C /* User.swift in Sources */,
+				0465D56E2CA15FDB00765D53 /* chooseTest.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+				0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */,
+				0465D56C2CA128D900765D53 /* ChooseISView.swift in Sources */,
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
+				0465D56A2CA127D300765D53 /* ChooseDBHView.swift in Sources */,
 				049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */,
 				049A23182C9136B60071854C /* TaskItem.swift in Sources */,
 				049A23122C9133810071854C /* Notification.swift in Sources */,
 				049A22E52C912ECA0071854C /* Item.swift in Sources */,
 				049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */,
-				049A23202C913F2D0071854C /* GetStartedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tamagotchi/Preview Content\"";
-				DEVELOPMENT_TEAM = QRL5NSR5NS;
+				DEVELOPMENT_TEAM = SW7998CMJ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -575,7 +602,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchi;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5hia.tamagotchi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -591,7 +618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tamagotchi/Preview Content\"";
-				DEVELOPMENT_TEAM = QRL5NSR5NS;
+				DEVELOPMENT_TEAM = SW7998CMJ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -604,7 +631,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchi;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5hia.tamagotchi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

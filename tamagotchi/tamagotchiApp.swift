@@ -38,7 +38,7 @@ struct tamagotchiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            GetStartedView2()
             //app start
         }
         .modelContainer(sharedModelContainer)
@@ -46,6 +46,6 @@ struct tamagotchiApp: App {
 }
 
 #Preview {
-    HomeView()
+    GetStartedView2()
         .modelContainer(for: Item.self, inMemory: true)
 }
