@@ -32,6 +32,10 @@
 		049A23432C93E2650071854C /* PetMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23422C93E2650071854C /* PetMainView.swift */; };
 		049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23442C93E2CB0071854C /* FriendsMainView.swift */; };
 		049A23472C93E3940071854C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23462C93E3940071854C /* HomeView.swift */; };
+		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
+		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
+		049DA36D2C9A891700E9B05B /* AddFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DA36C2C9A891700E9B05B /* AddFriendsView.swift */; };
+		04B562FB2C9A8EE900FEF65E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B562FA2C9A8EE900FEF65E /* GoogleService-Info.plist */; };
 		049BD1ED2CA273AC0051EB42 /* Rabbit.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 049BD1EC2CA273AC0051EB42 /* Rabbit.usdz */; };
 		049BD1EF2CA273FB0051EB42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1EE2CA273FB0051EB42 /* User.swift */; };
 		049BD1F42CA2743D0051EB42 /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1F02CA2743D0051EB42 /* TaskListCreateView.swift */; };
@@ -104,6 +108,10 @@
 		049A23422C93E2650071854C /* PetMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMainView.swift; sourceTree = "<group>"; };
 		049A23442C93E2CB0071854C /* FriendsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMainView.swift; sourceTree = "<group>"; };
 		049A23462C93E3940071854C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
+		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		049DA36C2C9A891700E9B05B /* AddFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsView.swift; sourceTree = "<group>"; };
+		04B562FA2C9A8EE900FEF65E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		049BD1EC2CA273AC0051EB42 /* Rabbit.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Rabbit.usdz; sourceTree = "<group>"; };
 		049BD1EE2CA273FB0051EB42 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		049BD1F02CA2743D0051EB42 /* TaskListCreateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
@@ -289,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				049A23442C93E2CB0071854C /* FriendsMainView.swift */,
+				049DA36C2C9A891700E9B05B /* AddFriendsView.swift */,
 			);
 			path = friends;
 			sourceTree = "<group>";
@@ -500,6 +509,9 @@
 				049BD2092CA276130051EB42 /* SharedRowView.swift in Sources */,
 				0465D56E2CA15FDB00765D53 /* chooseTest.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
+        04A2CFE22CA138D20061DCC2 /* AnimatedImage.swift in Sources */,
+				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+				049DA36D2C9A891700E9B05B /* AddFriendsView.swift in Sources */,
 				049BD2192CA27C480051EB42 /* ARViewContainer.swift in Sources */,
 				0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */,
 				0465D56C2CA128D900765D53 /* ChooseISView.swift in Sources */,
