@@ -6,22 +6,28 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct PetShop: View {
     @State private var selectedIndex: Int = 0
     @State var Rabbit : String = ""
     @State var Accessories : String = ""
+    
     @State private var ShopItems: [ShopItem] = [
         ShopItem(name: "Clover", image: "leaf" , price: 20, status: false),
         ShopItem(name: "Chick", image: "chick" , price: 20, status: false),
         ShopItem(name: "Flower", image: "flower" , price: 20, status: false),
         ShopItem(name: "Ribbon", image: "ribbon" , price: 20, status: false),
     ]
+    
     @State var toggle: Bool = false
     @State var isHidden: Bool = true
     @State var isAcc: Bool = true
     @Binding var currency: Int
     @State private var animated_index = 0
+    
+    @Environment(\.modelContext) private var context
+    @Query private var user: [User]
     
     var body: some View {
         NavigationView{

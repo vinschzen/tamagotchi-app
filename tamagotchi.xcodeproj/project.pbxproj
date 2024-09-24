@@ -22,7 +22,6 @@
 		049A22F42C912ECB0071854C /* tamagotchiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22F32C912ECB0071854C /* tamagotchiTests.swift */; };
 		049A22FE2C912ECB0071854C /* tamagotchiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22FD2C912ECB0071854C /* tamagotchiUITests.swift */; };
 		049A23002C912ECB0071854C /* tamagotchiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22FF2C912ECB0071854C /* tamagotchiUITestsLaunchTests.swift */; };
-		049A230E2C9130860071854C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A230D2C9130860071854C /* User.swift */; };
 		049A23122C9133810071854C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23112C9133810071854C /* Notification.swift */; };
 		049A23142C9133F60071854C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23132C9133F60071854C /* Pet.swift */; };
 		049A23182C9136B60071854C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23172C9136B60071854C /* TaskItem.swift */; };
@@ -30,20 +29,33 @@
 		049A231E2C91393F0071854C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A231D2C91393F0071854C /* LoginView.swift */; };
 		049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23242C9143340071854C /* FirebaseAnalytics */; };
 		049A23312C9299000071854C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 049A23302C9299000071854C /* FirebaseDatabase */; };
-		049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23342C93CD260071854C /* TaskListHomeView.swift */; };
 		049A23432C93E2650071854C /* PetMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23422C93E2650071854C /* PetMainView.swift */; };
 		049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23442C93E2CB0071854C /* FriendsMainView.swift */; };
 		049A23472C93E3940071854C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23462C93E3940071854C /* HomeView.swift */; };
-		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
-		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
+		049BD1ED2CA273AC0051EB42 /* Rabbit.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 049BD1EC2CA273AC0051EB42 /* Rabbit.usdz */; };
+		049BD1EF2CA273FB0051EB42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1EE2CA273FB0051EB42 /* User.swift */; };
+		049BD1F42CA2743D0051EB42 /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1F02CA2743D0051EB42 /* TaskListCreateView.swift */; };
+		049BD1F52CA2743D0051EB42 /* TaskListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1F12CA2743D0051EB42 /* TaskListDetailsView.swift */; };
+		049BD1F62CA2743D0051EB42 /* TaskListSharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1F22CA2743D0051EB42 /* TaskListSharedView.swift */; };
+		049BD1F72CA2743D0051EB42 /* TaskListHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1F32CA2743D0051EB42 /* TaskListHomeView.swift */; };
+		049BD1F92CA275C40051EB42 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 049BD1F82CA275C40051EB42 /* FirebaseFirestore */; };
+		049BD2032CA276130051EB42 /* StoreShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1FA2CA276130051EB42 /* StoreShopItem.swift */; };
+		049BD2042CA276130051EB42 /* ConfettiElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1FB2CA276130051EB42 /* ConfettiElement.swift */; };
+		049BD2052CA276130051EB42 /* AnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1FC2CA276130051EB42 /* AnimatedImage.swift */; };
+		049BD2062CA276130051EB42 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1FD2CA276130051EB42 /* TaskItemView.swift */; };
+		049BD2072CA276130051EB42 /* ThreeDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1FE2CA276130051EB42 /* ThreeDots.swift */; };
+		049BD2082CA276130051EB42 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1FF2CA276130051EB42 /* Toast.swift */; };
+		049BD2092CA276130051EB42 /* SharedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD2002CA276130051EB42 /* SharedRowView.swift */; };
+		049BD20A2CA276130051EB42 /* ProcessRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD2012CA276130051EB42 /* ProcessRowView.swift */; };
+		049BD20B2CA276130051EB42 /* TaskItemCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD2022CA276130051EB42 /* TaskItemCheckbox.swift */; };
+		049BD20D2CA2764D0051EB42 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD20C2CA2764D0051EB42 /* TaskManager.swift */; };
+		049BD2132CA277BE0051EB42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049BD2122CA277BE0051EB42 /* GoogleService-Info.plist */; };
+		049BD2142CA27BD10051EB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E62C912ECB0071854C /* Assets.xcassets */; };
+		049BD2192CA27C480051EB42 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD2152CA27C480051EB42 /* ARViewContainer.swift */; };
+		049BD21A2CA27C480051EB42 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD2162CA27C480051EB42 /* OtherView.swift */; };
+		049BD21B2CA27C480051EB42 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD2172CA27C480051EB42 /* SheetView.swift */; };
+		049BD21E2CA27FBE0051EB42 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD21D2CA27FBE0051EB42 /* UserData.swift */; };
 		04A2CFDC2CA0FD3F0061DCC2 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2CFDB2CA0FD3F0061DCC2 /* ShopItem.swift */; };
-		04A2CFE02CA1364A0061DCC2 /* StoreShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2CFDF2CA1364A0061DCC2 /* StoreShopItem.swift */; };
-		04A2CFE22CA138D20061DCC2 /* AnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2CFE12CA138D20061DCC2 /* AnimatedImage.swift */; };
-		04A2CFE42CA13A940061DCC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A2CFE32CA13A940061DCC2 /* GoogleService-Info.plist */; };
-		04A2CFE52CA13C4B0061DCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E62C912ECB0071854C /* Assets.xcassets */; };
-		04A2CFE62CA13C530061DCC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E92C912ECB0071854C /* Preview Assets.xcassets */; };
-		04BC84252C9BCC9300F90E0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */; };
-		04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,24 +96,38 @@
 		049A22F92C912ECB0071854C /* tamagotchiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamagotchiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049A22FD2C912ECB0071854C /* tamagotchiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiUITests.swift; sourceTree = "<group>"; };
 		049A22FF2C912ECB0071854C /* tamagotchiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		049A230D2C9130860071854C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		049A23112C9133810071854C /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		049A23132C9133F60071854C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		049A23172C9136B60071854C /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		049A231B2C9138460071854C /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		049A231D2C91393F0071854C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		049A23342C93CD260071854C /* TaskListHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListHomeView.swift; sourceTree = "<group>"; };
 		049A23422C93E2650071854C /* PetMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetMainView.swift; sourceTree = "<group>"; };
 		049A23442C93E2CB0071854C /* FriendsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMainView.swift; sourceTree = "<group>"; };
 		049A23462C93E3940071854C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
-		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		049BD1EC2CA273AC0051EB42 /* Rabbit.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Rabbit.usdz; sourceTree = "<group>"; };
+		049BD1EE2CA273FB0051EB42 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		049BD1F02CA2743D0051EB42 /* TaskListCreateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
+		049BD1F12CA2743D0051EB42 /* TaskListDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListDetailsView.swift; sourceTree = "<group>"; };
+		049BD1F22CA2743D0051EB42 /* TaskListSharedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListSharedView.swift; sourceTree = "<group>"; };
+		049BD1F32CA2743D0051EB42 /* TaskListHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListHomeView.swift; sourceTree = "<group>"; };
+		049BD1FA2CA276130051EB42 /* StoreShopItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreShopItem.swift; sourceTree = "<group>"; };
+		049BD1FB2CA276130051EB42 /* ConfettiElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiElement.swift; sourceTree = "<group>"; };
+		049BD1FC2CA276130051EB42 /* AnimatedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
+		049BD1FD2CA276130051EB42 /* TaskItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		049BD1FE2CA276130051EB42 /* ThreeDots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDots.swift; sourceTree = "<group>"; };
+		049BD1FF2CA276130051EB42 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		049BD2002CA276130051EB42 /* SharedRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedRowView.swift; sourceTree = "<group>"; };
+		049BD2012CA276130051EB42 /* ProcessRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessRowView.swift; sourceTree = "<group>"; };
+		049BD2022CA276130051EB42 /* TaskItemCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemCheckbox.swift; sourceTree = "<group>"; };
+		049BD20C2CA2764D0051EB42 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		049BD2122CA277BE0051EB42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		049BD2152CA27C480051EB42 /* ARViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		049BD2162CA27C480051EB42 /* OtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+		049BD2172CA27C480051EB42 /* SheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		049BD21C2CA27EF10051EB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		049BD21D2CA27FBE0051EB42 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		04A2CFDB2CA0FD3F0061DCC2 /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
-		04A2CFDF2CA1364A0061DCC2 /* StoreShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreShopItem.swift; sourceTree = "<group>"; };
-		04A2CFE12CA138D20061DCC2 /* AnimatedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
-		04A2CFE32CA13A940061DCC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDetailsView.swift; sourceTree = "<group>"; };
+		04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "/Downloads/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +137,7 @@
 			files = (
 				049A23312C9299000071854C /* FirebaseDatabase in Frameworks */,
 				049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */,
+				049BD1F92CA275C40051EB42 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +165,7 @@
 				049A22F22C912ECB0071854C /* tamagotchiTests */,
 				049A22FC2C912ECB0071854C /* tamagotchiUITests */,
 				049A22DE2C912ECA0071854C /* Products */,
+				049BD1E72CA2732C0051EB42 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,7 +182,9 @@
 		049A22DF2C912ECA0071854C /* tamagotchi */ = {
 			isa = PBXGroup;
 			children = (
-				04A2CFE32CA13A940061DCC2 /* GoogleService-Info.plist */,
+				049BD21C2CA27EF10051EB42 /* Info.plist */,
+				049BD2122CA277BE0051EB42 /* GoogleService-Info.plist */,
+				049BD1EC2CA273AC0051EB42 /* Rabbit.usdz */,
 				049A230C2C9130670071854C /* data */,
 				049A22E02C912ECA0071854C /* tamagotchiApp.swift */,
 				049A231D2C91393F0071854C /* LoginView.swift */,
@@ -194,9 +224,11 @@
 		049A230C2C9130670071854C /* data */ = {
 			isa = PBXGroup;
 			children = (
+				049BD20C2CA2764D0051EB42 /* TaskManager.swift */,
 				049A233F2C93DE3C0071854C /* elements */,
 				049A233A2C93DB240071854C /* views */,
 				049A23262C9148000071854C /* entities */,
+				049BD21D2CA27FBE0051EB42 /* UserData.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -204,7 +236,7 @@
 		049A23262C9148000071854C /* entities */ = {
 			isa = PBXGroup;
 			children = (
-				049A230D2C9130860071854C /* User.swift */,
+				049BD1EE2CA273FB0051EB42 /* User.swift */,
 				049A23132C9133F60071854C /* Pet.swift */,
 				049A23172C9136B60071854C /* TaskItem.swift */,
 				049A231B2C9138460071854C /* TaskList.swift */,
@@ -217,6 +249,7 @@
 		049A233A2C93DB240071854C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				049BD2182CA27C480051EB42 /* ar */,
 				049A233E2C93DBB10071854C /* pet */,
 				049A233D2C93DB970071854C /* friends */,
 				049A233C2C93DB8C0071854C /* tasklist */,
@@ -244,9 +277,10 @@
 		049A233C2C93DB8C0071854C /* tasklist */ = {
 			isa = PBXGroup;
 			children = (
-				049A23342C93CD260071854C /* TaskListHomeView.swift */,
-				049A23482C93E4890071854C /* TaskListCreateView.swift */,
-				04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */,
+				049BD1F02CA2743D0051EB42 /* TaskListCreateView.swift */,
+				049BD1F12CA2743D0051EB42 /* TaskListDetailsView.swift */,
+				049BD1F32CA2743D0051EB42 /* TaskListHomeView.swift */,
+				049BD1F22CA2743D0051EB42 /* TaskListSharedView.swift */,
 			);
 			path = tasklist;
 			sourceTree = "<group>";
@@ -271,11 +305,35 @@
 		049A233F2C93DE3C0071854C /* elements */ = {
 			isa = PBXGroup;
 			children = (
-				049A234C2C93FB4A0071854C /* TaskItemView.swift */,
-				04A2CFDF2CA1364A0061DCC2 /* StoreShopItem.swift */,
-				04A2CFE12CA138D20061DCC2 /* AnimatedImage.swift */,
+				049BD1FC2CA276130051EB42 /* AnimatedImage.swift */,
+				049BD1FB2CA276130051EB42 /* ConfettiElement.swift */,
+				049BD2012CA276130051EB42 /* ProcessRowView.swift */,
+				049BD2002CA276130051EB42 /* SharedRowView.swift */,
+				049BD1FA2CA276130051EB42 /* StoreShopItem.swift */,
+				049BD2022CA276130051EB42 /* TaskItemCheckbox.swift */,
+				049BD1FD2CA276130051EB42 /* TaskItemView.swift */,
+				049BD1FE2CA276130051EB42 /* ThreeDots.swift */,
+				049BD1FF2CA276130051EB42 /* Toast.swift */,
 			);
 			path = elements;
+			sourceTree = "<group>";
+		};
+		049BD1E72CA2732C0051EB42 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		049BD2182CA27C480051EB42 /* ar */ = {
+			isa = PBXGroup;
+			children = (
+				049BD2152CA27C480051EB42 /* ARViewContainer.swift */,
+				049BD2162CA27C480051EB42 /* OtherView.swift */,
+				049BD2172CA27C480051EB42 /* SheetView.swift */,
+			);
+			path = ar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +355,7 @@
 			packageProductDependencies = (
 				049A23242C9143340071854C /* FirebaseAnalytics */,
 				049A23302C9299000071854C /* FirebaseDatabase */,
+				049BD1F82CA275C40051EB42 /* FirebaseFirestore */,
 			);
 			productName = tamagotchi;
 			productReference = 049A22DD2C912ECA0071854C /* tamagotchi.app */;
@@ -389,9 +448,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049A22EA2C912ECB0071854C /* Preview Assets.xcassets in Resources */,
-				049A22E72C912ECB0071854C /* Assets.xcassets in Resources */,
-				04BC84252C9BCC9300F90E0A /* GoogleService-Info.plist in Resources */,
+				049BD2142CA27BD10051EB42 /* Assets.xcassets in Resources */,
+				049BD1ED2CA273AC0051EB42 /* Rabbit.usdz in Resources */,
+				049BD2132CA277BE0051EB42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,29 +475,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049BD2062CA276130051EB42 /* TaskItemView.swift in Sources */,
 				04A2CFDC2CA0FD3F0061DCC2 /* ShopItem.swift in Sources */,
 				049A231C2C9138460071854C /* TaskList.swift in Sources */,
-				04A2CFE02CA1364A0061DCC2 /* StoreShopItem.swift in Sources */,
-				049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */,
+				049BD1F72CA2743D0051EB42 /* TaskListHomeView.swift in Sources */,
 				049A23142C9133F60071854C /* Pet.swift in Sources */,
-				04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */,
+				049BD20A2CA276130051EB42 /* ProcessRowView.swift in Sources */,
+				049BD1F42CA2743D0051EB42 /* TaskListCreateView.swift in Sources */,
 				049A23432C93E2650071854C /* PetMainView.swift in Sources */,
+				049BD2072CA276130051EB42 /* ThreeDots.swift in Sources */,
+				049BD2052CA276130051EB42 /* AnimatedImage.swift in Sources */,
 				049A23472C93E3940071854C /* HomeView.swift in Sources */,
+				049BD21A2CA27C480051EB42 /* OtherView.swift in Sources */,
 				0465D5682C9D76F900765D53 /* GetStartedView2.swift in Sources */,
 				0465D5452C9BD85000765D53 /* Step1View.swift in Sources */,
 				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
+				049BD1F52CA2743D0051EB42 /* TaskListDetailsView.swift in Sources */,
 				0465D5492C9BD86300765D53 /* ChooseBPView.swift in Sources */,
+				049BD2032CA276130051EB42 /* StoreShopItem.swift in Sources */,
+				049BD21E2CA27FBE0051EB42 /* UserData.swift in Sources */,
 				0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */,
-				049A230E2C9130860071854C /* User.swift in Sources */,
+				049BD20D2CA2764D0051EB42 /* TaskManager.swift in Sources */,
+				049BD2082CA276130051EB42 /* Toast.swift in Sources */,
+				049BD2092CA276130051EB42 /* SharedRowView.swift in Sources */,
 				0465D56E2CA15FDB00765D53 /* chooseTest.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
-				04A2CFE22CA138D20061DCC2 /* AnimatedImage.swift in Sources */,
-				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+				049BD2192CA27C480051EB42 /* ARViewContainer.swift in Sources */,
 				0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */,
 				0465D56C2CA128D900765D53 /* ChooseISView.swift in Sources */,
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
+				049BD1EF2CA273FB0051EB42 /* User.swift in Sources */,
 				0465D56A2CA127D300765D53 /* ChooseDBHView.swift in Sources */,
-				049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */,
+				049BD20B2CA276130051EB42 /* TaskItemCheckbox.swift in Sources */,
+				049BD21B2CA27C480051EB42 /* SheetView.swift in Sources */,
+				049BD1F62CA2743D0051EB42 /* TaskListSharedView.swift in Sources */,
+				049BD2042CA276130051EB42 /* ConfettiElement.swift in Sources */,
 				049A23182C9136B60071854C /* TaskItem.swift in Sources */,
 				049A23122C9133810071854C /* Notification.swift in Sources */,
 				049A22E52C912ECA0071854C /* Item.swift in Sources */,
@@ -604,24 +675,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tamagotchi/Preview Content\"";
-				DEVELOPMENT_TEAM = SW7998CMJ2;
+				DEVELOPMENT_TEAM = QRL5NSR5NS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tamagotchi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "take ar shots";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "add ar shots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kelompok5hia.tamagotchi;
+				PRODUCT_BUNDLE_IDENTIFIER = "kelompok5-2.tamagotchi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -633,24 +708,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tamagotchi/Preview Content\"";
-				DEVELOPMENT_TEAM = SW7998CMJ2;
+				DEVELOPMENT_TEAM = QRL5NSR5NS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tamagotchi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "take ar shots";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "add ar shots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kelompok5hia.tamagotchi;
+				PRODUCT_BUNDLE_IDENTIFIER = "kelompok5-2.tamagotchi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -793,6 +872,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		049BD1F82CA275C40051EB42 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
