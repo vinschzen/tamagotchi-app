@@ -7,7 +7,6 @@ struct PetMainView: View {
     @State private var animated_index = 0
 
     var body: some View {
-        NavigationView {
             VStack {
                 VStack(alignment: .trailing){
                     HStack{
@@ -75,21 +74,8 @@ struct PetMainView: View {
             }
             .navigationBarTitle("Pet Screen", displayMode: .inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        // Handle left button action in navigation bar
-                    }) {
-                        Image(systemName: "chevron.left")
-                            .foregroundColor(.blue)
-                    }
-                }
             }
-            
-        }
         .tabViewStyle(.automatic)
-//        .bottomSheet(isPresented: $showBottomSheet) {
-//            BottomSheetContent()
-//        }
     }
     func timerRabbit(){
             
@@ -118,6 +104,10 @@ struct PetMainView: View {
             }
         }
     }
+}
+
+#Preview{
+    PetMainView()
 }
 
 #Preview{
