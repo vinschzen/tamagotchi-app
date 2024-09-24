@@ -23,6 +23,7 @@ struct HomeView: View {
                         Label("To Do List", systemImage: "checklist")
                     }
                     .tag(1)
+                    .navigationBarTitle("To do List")
                 
                 FriendsMainView()
                     .tabItem {

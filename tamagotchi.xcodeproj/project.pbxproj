@@ -30,8 +30,21 @@
 		049A23472C93E3940071854C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23462C93E3940071854C /* HomeView.swift */; };
 		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
 		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
+		049BD1E02CA111AD0051EB42 /* SharedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1DF2CA111AD0051EB42 /* SharedRowView.swift */; };
+		049BD1E22CA1149F0051EB42 /* ThreeDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1E12CA1149F0051EB42 /* ThreeDots.swift */; };
+		049FB7442CA0F49800D99714 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FB7402CA0F49800D99714 /* ARViewContainer.swift */; };
+		049FB7452CA0F49800D99714 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FB7412CA0F49800D99714 /* OtherView.swift */; };
+		049FB7462CA0F49800D99714 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FB7422CA0F49800D99714 /* SheetView.swift */; };
+		049FB7492CA0F68B00D99714 /* Rabbit.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 049FB7482CA0F68B00D99714 /* Rabbit.usdz */; };
 		04FF3B842C9AB71600F0C0D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FF3B832C9AB71600F0C0D7 /* GoogleService-Info.plist */; };
 		04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */; };
+		04FF3B8C2C9AEB1B00F0C0D7 /* TaskItemCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B8B2C9AEB1B00F0C0D7 /* TaskItemCheckbox.swift */; };
+		04FF3B8E2C9AEF1900F0C0D7 /* ProcessRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B8D2C9AEF1900F0C0D7 /* ProcessRowView.swift */; };
+		04FF3B912C9AFC7100F0C0D7 /* ConfettiElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B902C9AFC7100F0C0D7 /* ConfettiElement.swift */; };
+		04FF3B932C9BCDB800F0C0D7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 04FF3B922C9BCDB800F0C0D7 /* FirebaseFirestore */; };
+		04FF3B952C9BCF8800F0C0D7 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B942C9BCF8800F0C0D7 /* TaskManager.swift */; };
+		04FF3B972C9BDF6200F0C0D7 /* TaskListSharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B962C9BDF6200F0C0D7 /* TaskListSharedView.swift */; };
+		04FF3B9F2C9C1D5F00F0C0D7 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 04FF3B9E2C9C1D5F00F0C0D7 /* FirebaseFunctions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +89,20 @@
 		049A23462C93E3940071854C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
 		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		049BD1DF2CA111AD0051EB42 /* SharedRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedRowView.swift; sourceTree = "<group>"; };
+		049BD1E12CA1149F0051EB42 /* ThreeDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDots.swift; sourceTree = "<group>"; };
+		049FB7402CA0F49800D99714 /* ARViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		049FB7412CA0F49800D99714 /* OtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+		049FB7422CA0F49800D99714 /* SheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		049FB7472CA0F54C00D99714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		049FB7482CA0F68B00D99714 /* Rabbit.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Rabbit.usdz; path = tamagotchi/Rabbit.usdz; sourceTree = SOURCE_ROOT; };
 		04FF3B832C9AB71600F0C0D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDetailsView.swift; sourceTree = "<group>"; };
+		04FF3B8B2C9AEB1B00F0C0D7 /* TaskItemCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemCheckbox.swift; sourceTree = "<group>"; };
+		04FF3B8D2C9AEF1900F0C0D7 /* ProcessRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRowView.swift; sourceTree = "<group>"; };
+		04FF3B902C9AFC7100F0C0D7 /* ConfettiElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiElement.swift; sourceTree = "<group>"; };
+		04FF3B942C9BCF8800F0C0D7 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		04FF3B962C9BDF6200F0C0D7 /* TaskListSharedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListSharedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +112,8 @@
 			files = (
 				049A23312C9299000071854C /* FirebaseDatabase in Frameworks */,
 				049A23252C9143340071854C /* FirebaseAnalytics in Frameworks */,
+				04FF3B932C9BCDB800F0C0D7 /* FirebaseFirestore in Frameworks */,
+				04FF3B9F2C9C1D5F00F0C0D7 /* FirebaseFunctions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +157,7 @@
 		049A22DF2C912ECA0071854C /* tamagotchi */ = {
 			isa = PBXGroup;
 			children = (
+				049FB7472CA0F54C00D99714 /* Info.plist */,
 				04FF3B832C9AB71600F0C0D7 /* GoogleService-Info.plist */,
 				049A230C2C9130670071854C /* data */,
 				049A22E02C912ECA0071854C /* tamagotchiApp.swift */,
@@ -170,9 +198,11 @@
 		049A230C2C9130670071854C /* data */ = {
 			isa = PBXGroup;
 			children = (
+				049FB7482CA0F68B00D99714 /* Rabbit.usdz */,
 				049A233F2C93DE3C0071854C /* elements */,
 				049A233A2C93DB240071854C /* views */,
 				049A23262C9148000071854C /* entities */,
+				04FF3B942C9BCF8800F0C0D7 /* TaskManager.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -192,6 +222,7 @@
 		049A233A2C93DB240071854C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				049FB7432CA0F49800D99714 /* ar */,
 				049A233E2C93DBB10071854C /* pet */,
 				049A233D2C93DB970071854C /* friends */,
 				049A233C2C93DB8C0071854C /* tasklist */,
@@ -215,6 +246,7 @@
 				049A23342C93CD260071854C /* TaskListHomeView.swift */,
 				049A23482C93E4890071854C /* TaskListCreateView.swift */,
 				04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */,
+				04FF3B962C9BDF6200F0C0D7 /* TaskListSharedView.swift */,
 			);
 			path = tasklist;
 			sourceTree = "<group>";
@@ -239,9 +271,25 @@
 			isa = PBXGroup;
 			children = (
 				049A234C2C93FB4A0071854C /* TaskItemView.swift */,
+				049BD1E12CA1149F0051EB42 /* ThreeDots.swift */,
+				04FF3B8B2C9AEB1B00F0C0D7 /* TaskItemCheckbox.swift */,
+				04FF3B8D2C9AEF1900F0C0D7 /* ProcessRowView.swift */,
+				049BD1DF2CA111AD0051EB42 /* SharedRowView.swift */,
+				04FF3B902C9AFC7100F0C0D7 /* ConfettiElement.swift */,
 			);
 			path = elements;
 			sourceTree = "<group>";
+		};
+		049FB7432CA0F49800D99714 /* ar */ = {
+			isa = PBXGroup;
+			children = (
+				049FB7402CA0F49800D99714 /* ARViewContainer.swift */,
+				049FB7412CA0F49800D99714 /* OtherView.swift */,
+				049FB7422CA0F49800D99714 /* SheetView.swift */,
+			);
+			name = ar;
+			path = tamagotchi/data/views/ar;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -262,6 +310,8 @@
 			packageProductDependencies = (
 				049A23242C9143340071854C /* FirebaseAnalytics */,
 				049A23302C9299000071854C /* FirebaseDatabase */,
+				04FF3B922C9BCDB800F0C0D7 /* FirebaseFirestore */,
+				04FF3B9E2C9C1D5F00F0C0D7 /* FirebaseFunctions */,
 			);
 			productName = tamagotchi;
 			productReference = 049A22DD2C912ECA0071854C /* tamagotchi.app */;
@@ -355,9 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				049A22EA2C912ECB0071854C /* Preview Assets.xcassets in Resources */,
-				04F4B8272C9A85500051EC9E /* GoogleService-Info.plist in Resources */,
 				049A22E72C912ECB0071854C /* Assets.xcassets in Resources */,
 				04FF3B842C9AB71600F0C0D7 /* GoogleService-Info.plist in Resources */,
+				049FB7492CA0F68B00D99714 /* Rabbit.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,23 +432,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FF3B8C2C9AEB1B00F0C0D7 /* TaskItemCheckbox.swift in Sources */,
 				049A231C2C9138460071854C /* TaskList.swift in Sources */,
 				049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */,
 				049A23142C9133F60071854C /* Pet.swift in Sources */,
 				04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */,
 				049A23432C93E2650071854C /* PetMainView.swift in Sources */,
+				04FF3B912C9AFC7100F0C0D7 /* ConfettiElement.swift in Sources */,
 				049A23472C93E3940071854C /* HomeView.swift in Sources */,
+				04FF3B972C9BDF6200F0C0D7 /* TaskListSharedView.swift in Sources */,
 				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
 				049A230E2C9130860071854C /* User.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
+				049FB7462CA0F49800D99714 /* SheetView.swift in Sources */,
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+				04FF3B952C9BCF8800F0C0D7 /* TaskManager.swift in Sources */,
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
+				049BD1E02CA111AD0051EB42 /* SharedRowView.swift in Sources */,
+				04FF3B8E2C9AEF1900F0C0D7 /* ProcessRowView.swift in Sources */,
 				049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */,
 				049A23182C9136B60071854C /* TaskItem.swift in Sources */,
 				049A23122C9133810071854C /* Notification.swift in Sources */,
+				049FB7442CA0F49800D99714 /* ARViewContainer.swift in Sources */,
 				049A22E52C912ECA0071854C /* Item.swift in Sources */,
 				049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */,
 				049A23202C913F2D0071854C /* GetStartedView.swift in Sources */,
+				049BD1E22CA1149F0051EB42 /* ThreeDots.swift in Sources */,
+				049FB7452CA0F49800D99714 /* OtherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,11 +625,13 @@
 				DEVELOPMENT_TEAM = QRL5NSR5NS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tamagotchi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use AR app";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save to gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,11 +656,13 @@
 				DEVELOPMENT_TEAM = QRL5NSR5NS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tamagotchi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use AR app";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save to gallery";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -748,6 +812,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		04FF3B922C9BCDB800F0C0D7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		04FF3B9E2C9C1D5F00F0C0D7 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049A23232C9143340071854C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

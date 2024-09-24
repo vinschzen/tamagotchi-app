@@ -13,43 +13,23 @@ struct TaskListHomeView: View {
     
     var filters = ["Today", "Recent", "Oldest"]
     @State private var selectedFilter: String = "Today"
-    
-    
+
+    @State private var isDetailViewShowing = false
 
     @Environment(\.modelContext) private var context
+    
     @Query private var tasklists: [TaskList]
-
     @State private var isSectionExpanded: [Bool] = Array(repeating: false, count: 50)
+    @State private var showConfetti = false
+
 
     var body: some View {
         NavigationSplitView {
             List {
-//                CollapsibleList(tasklists: tasklists)
-                ForEach(0..<tasklists.count, id: \.self) { sectionIndex in
-                    DisclosureGroup(
-                        tasklists[sectionIndex].title,
-                        isExpanded: $isSectionExpanded[sectionIndex]
-                    ) {
-                        ForEach(tasklists[sectionIndex].tasklist!) { t in
-                            HStack {
-                                Image(systemName: t.finished
-                                      ? "largecircle.fill.circle"
-                                      : "circle"
-                                )
-                                .imageScale(.large)
-                                .foregroundColor(.accentColor)
-                                .onTapGesture {
-                                    t.finished.toggle()
-                                }
-                                Text(t.name)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                            }
-                        }
-                    }
-                    .frame(width: 300)
+                ForEach(tasklists) { l in
+                    ProcessRowView(tasklist: l, confettiAction: confetti)
                 }
             }
-            .navigationBarTitle("Task List", displayMode: .inline)
             .toolbar {
                 ToolbarItem {
                     NavigationLink(destination: TaskListCreateView()) {
@@ -58,17 +38,22 @@ struct TaskListHomeView: View {
                             Label("Add Item", systemImage: "plus")
                         }
     
-                    }.navigationBarTitle("Create Task", displayMode: .inline)
+                    }.navigationBarTitle("Task List", displayMode: .inline)
                 }
                 ToolbarItem {
-                    Button(action: filter) {
-                        Label("Filter", systemImage: "magnifyingglass")
+                    NavigationLink(destination: TaskListSharedView()) {
+    
+                        Button(action: addItem) {
+                            Label("Search", systemImage: "magnifyingglass")
+                        }
+    
                     }
                 }
             }
         } detail: {
             Text("Select an item")
-        }
+        }                
+        .displayConfetti(isActive: $showConfetti)
     }
     
     private func addItem() {
@@ -86,16 +71,20 @@ struct TaskListHomeView: View {
             }
         }
     }
-    
-    private func details(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                TaskListDetailsView(tasklist: tasklists[index])
+
+    func confetti(isTapped: Bool) {
+        guard (isTapped) else {return}
+        
+        withAnimation(.easeInOut(duration: 5)) {
+            showConfetti = true
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            withAnimation(.easeInOut(duration: 5)) {
+                showConfetti = false
             }
         }
     }
-    
-    
     
     private func filter() {
         
