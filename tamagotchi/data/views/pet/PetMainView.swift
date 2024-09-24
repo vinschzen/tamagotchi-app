@@ -10,6 +10,7 @@ struct PetMainView: View {
             VStack {
                 VStack(alignment: .trailing){
                     HStack{
+                        OtherView()
                         Spacer()
                         NavigationLink(destination: PetShop(currency: $currency)){
                             HStack{
