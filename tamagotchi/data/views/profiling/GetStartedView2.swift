@@ -23,7 +23,7 @@ struct GetStartedView2: View {
             GeometryReader { geometry in
                 VStack {
                     // Carousel View
-                    ScrollView(.horizontal, showsIndicators: false) {
+                    ScrollView(.horizontal) {
                         HStack(spacing: 0) {
                             ForEach(0..<items.count, id: \.self) { index in
                                 VStack {
@@ -71,7 +71,7 @@ struct GetStartedView2: View {
                     }){
                         NavigationLink(destination: Step1View()){
                             
-                            Text("Login")
+                            Text("Let's Go!")
                                 .frame(width: UIScreen.main.bounds.width*0.8, height: 50, alignment: .center)
                                 .background(RoundedRectangle(cornerRadius: 15).fill(Color.blue))
                                 .overlay(RoundedRectangle(cornerRadius: 15).stroke())
