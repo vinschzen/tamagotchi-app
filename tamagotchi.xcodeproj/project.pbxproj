@@ -30,6 +30,7 @@
 		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
 		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		049BD1E02CA111AD0051EB42 /* SharedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1DF2CA111AD0051EB42 /* SharedRowView.swift */; };
 		049BD1E22CA1149F0051EB42 /* ThreeDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1E12CA1149F0051EB42 /* ThreeDots.swift */; };
 		049FB7442CA0F49800D99714 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FB7402CA0F49800D99714 /* ARViewContainer.swift */; };
@@ -45,6 +46,9 @@
 		04A2CFE52CA13C4B0061DCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E62C912ECB0071854C /* Assets.xcassets */; };
 		04A2CFE62CA13C530061DCC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E92C912ECB0071854C /* Preview Assets.xcassets */; };
 >>>>>>> fe83a79 (pet screen)
+=======
+		04BC84252C9BCC9300F90E0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */; };
+>>>>>>> d804aa8 (test push)
 		04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */; };
 		04FF3B8C2C9AEB1B00F0C0D7 /* TaskItemCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B8B2C9AEB1B00F0C0D7 /* TaskItemCheckbox.swift */; };
 		04FF3B8E2C9AEF1900F0C0D7 /* ProcessRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B8D2C9AEF1900F0C0D7 /* ProcessRowView.swift */; };
@@ -99,6 +103,7 @@
 		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
 		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		049BD1DF2CA111AD0051EB42 /* SharedRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedRowView.swift; sourceTree = "<group>"; };
 		049BD1E12CA1149F0051EB42 /* ThreeDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDots.swift; sourceTree = "<group>"; };
 		049FB7402CA0F49800D99714 /* ARViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
@@ -113,6 +118,9 @@
 		04A2CFE12CA138D20061DCC2 /* AnimatedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
 		04A2CFE32CA13A940061DCC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 >>>>>>> fe83a79 (pet screen)
+=======
+		04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+>>>>>>> d804aa8 (test push)
 		04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDetailsView.swift; sourceTree = "<group>"; };
 		04FF3B8B2C9AEB1B00F0C0D7 /* TaskItemCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemCheckbox.swift; sourceTree = "<group>"; };
 		04FF3B8D2C9AEF1900F0C0D7 /* ProcessRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRowView.swift; sourceTree = "<group>"; };
@@ -174,11 +182,15 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				049FB7472CA0F54C00D99714 /* Info.plist */,
 				04FF3B832C9AB71600F0C0D7 /* GoogleService-Info.plist */,
 =======
 				04A2CFE32CA13A940061DCC2 /* GoogleService-Info.plist */,
 >>>>>>> fe83a79 (pet screen)
+=======
+				04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */,
+>>>>>>> d804aa8 (test push)
 				049A230C2C9130670071854C /* data */,
 				049A22E02C912ECA0071854C /* tamagotchiApp.swift */,
 				049A231D2C91393F0071854C /* LoginView.swift */,
@@ -434,6 +446,7 @@
 <<<<<<< HEAD
 				049A22EA2C912ECB0071854C /* Preview Assets.xcassets in Resources */,
 				049A22E72C912ECB0071854C /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
 				04FF3B842C9AB71600F0C0D7 /* GoogleService-Info.plist in Resources */,
 				049FB7492CA0F68B00D99714 /* Rabbit.usdz in Resources */,
 =======
@@ -441,6 +454,9 @@
 				04A2CFE52CA13C4B0061DCC2 /* Assets.xcassets in Resources */,
 				04A2CFE42CA13A940061DCC2 /* GoogleService-Info.plist in Resources */,
 >>>>>>> fe83a79 (pet screen)
+=======
+				04BC84252C9BCC9300F90E0A /* GoogleService-Info.plist in Resources */,
+>>>>>>> d804aa8 (test push)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
