@@ -24,6 +24,7 @@ struct tamagotchiApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
+            User.self,
             TaskList.self,
             TaskItem.self,
         ])

@@ -70,6 +70,7 @@
 =======
 		049BD1E02CA111AD0051EB42 /* SharedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1DF2CA111AD0051EB42 /* SharedRowView.swift */; };
 		049BD1E22CA1149F0051EB42 /* ThreeDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1E12CA1149F0051EB42 /* ThreeDots.swift */; };
+		049BD1E42CA261A00051EB42 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BD1E32CA261A00051EB42 /* Toast.swift */; };
 		049FB7442CA0F49800D99714 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FB7402CA0F49800D99714 /* ARViewContainer.swift */; };
 		049FB7452CA0F49800D99714 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FB7412CA0F49800D99714 /* OtherView.swift */; };
 		049FB7462CA0F49800D99714 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FB7422CA0F49800D99714 /* SheetView.swift */; };
@@ -170,6 +171,7 @@
 =======
 		049BD1DF2CA111AD0051EB42 /* SharedRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedRowView.swift; sourceTree = "<group>"; };
 		049BD1E12CA1149F0051EB42 /* ThreeDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDots.swift; sourceTree = "<group>"; };
+		049BD1E32CA261A00051EB42 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		049FB7402CA0F49800D99714 /* ARViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		049FB7412CA0F49800D99714 /* OtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		049FB7422CA0F49800D99714 /* SheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
@@ -397,8 +399,15 @@
 				04FF3B8D2C9AEF1900F0C0D7 /* ProcessRowView.swift */,
 				049BD1DF2CA111AD0051EB42 /* SharedRowView.swift */,
 				04FF3B902C9AFC7100F0C0D7 /* ConfettiElement.swift */,
+<<<<<<< HEAD
 >>>>>>> 0a851e2 (swift data, ar)
+<<<<<<< HEAD
 >>>>>>> 0a428eb (ar and tasklist)
+=======
+=======
+				049BD1E32CA261A00051EB42 /* Toast.swift */,
+>>>>>>> 258123a (ar and tasklist)
+>>>>>>> 64cd001 (ar and tasklist)
 			);
 			path = elements;
 			sourceTree = "<group>";
@@ -640,6 +649,7 @@
 =======
 =======
 				049FB7462CA0F49800D99714 /* SheetView.swift in Sources */,
+				049BD1E42CA261A00051EB42 /* Toast.swift in Sources */,
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
 				04FF3B952C9BCF8800F0C0D7 /* TaskManager.swift in Sources */,
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
