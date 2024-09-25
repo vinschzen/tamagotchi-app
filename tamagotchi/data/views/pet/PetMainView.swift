@@ -59,7 +59,9 @@ struct PetMainView: View {
                         .scaledToFit()
                         .frame(height: 350, alignment: .center)
                         .onAppear(perform: timerRabbit)
-                    Image("leaf\(animated_index)")
+                    
+                    
+                    Image("\(current_user.equipped)\(animated_index)")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 350, alignment: .center)

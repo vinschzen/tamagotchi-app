@@ -38,7 +38,7 @@ struct Step2View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(Color.red)
+                                .fill(.maincolor)
                                 .frame(width: 250)
                             )
                     }
@@ -60,10 +60,10 @@ struct Step2View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(Color.red)
+                                .fill(.maincolor)
                                 .frame(width: 250)
                                 //
-                            )                        
+                            )
                     }
                 }).padding(.top)
                 
@@ -83,7 +83,7 @@ struct Step2View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(Color.red)
+                                .fill(.maincolor)
                                 .frame(width: 250)
                             )
                     }

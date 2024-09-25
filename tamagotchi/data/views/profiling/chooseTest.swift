@@ -32,7 +32,7 @@ struct chooseTest: View {
         "Unlock New Skill 🔓",
         "Meeting 👤",
         "Online Course 📝",
-    ]    
+    ]
     let plansIS = [
         "Learn English📖",
         "Reflection ✏️",
@@ -45,70 +45,75 @@ struct chooseTest: View {
     ]
 
     var body: some View {
-        VStack {
-            Text("Choose Your Plan!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding(.top, 40.0)
-            
-            Spacer()
-            
-            if (areas == "bp"){
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                    ForEach(0..<plansBP.count, id: \.self) { index in
-                        PlanButton(
-                            title: plansBP[index],
-                            isSelected: selectedPlans.contains(plansBP[index]),
-                            toggleSelection: { togglePlan(plansBP[index]) }
-                        )
+        NavigationStack{
+            VStack {
+                Text("Choose Your Plan!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.top, 40.0)
+                
+                Spacer()
+                
+                if (areas == "bp"){
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                        ForEach(0..<plansBP.count, id: \.self) { index in
+                            PlanButton(
+                                title: plansBP[index],
+                                isSelected: selectedPlans.contains(plansBP[index]),
+                                toggleSelection: { togglePlan(plansBP[index]) }
+                            )
+                        }
+                    }
+                    .padding()
+                }
+                else if (areas == "dbh"){
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                        ForEach(0..<plansDBH.count, id: \.self) { index in
+                            PlanButton(
+                                title: plansDBH[index],
+                                isSelected: selectedPlans.contains(plansDBH[index]),
+                                toggleSelection: { togglePlan(plansDBH[index]) }
+                            )
+                        }
+                    }
+                    .padding()
+                }
+                else if(areas == "is"){
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+                        ForEach(0..<plansIS.count, id: \.self) { index in
+                            PlanButton(
+                                title: plansIS[index],
+                                isSelected: selectedPlans.contains(plansIS[index]),
+                                toggleSelection: { togglePlan(plansIS[index]) }
+                            )
+                        }
+                    }
+                    .padding()
+                }
+
+                // 2x2 grid layout
+                
+                Spacer()
+
+                Button(action: {
+                    // Handle "Plan Now!" action
+                    print("Selected Plans: \(selectedPlans)")
+                }) {
+                    NavigationLink(destination: PlansView(plans: selectedPlans)){
+                        Text("Plan Now!")
+                            .font(.title3)
+                            .foregroundColor(.blue)
                     }
                 }
                 .padding()
 
+                Text("Step 3 of 3")
+                    .font(.footnote)
+                    .padding(.bottom)
             }
-            else if (areas == "dbh"){
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                    ForEach(0..<plansDBH.count, id: \.self) { index in
-                        PlanButton(
-                            title: plansDBH[index],
-                            isSelected: selectedPlans.contains(plansDBH[index]),
-                            toggleSelection: { togglePlan(plansDBH[index]) }
-                        )
-                    }
-                }
-                .padding()
-            }
-            else if(areas == "is"){
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                    ForEach(0..<plansIS.count, id: \.self) { index in
-                        PlanButton(
-                            title: plansIS[index],
-                            isSelected: selectedPlans.contains(plansIS[index]),
-                            toggleSelection: { togglePlan(plansIS[index]) }
-                        )
-                    }
-                }
-                .padding()
-
-            }
-
-            // 2x2 grid layout
-            
-            Spacer()
-
-            Button(action: {
-                // Handle "Plan Now!" action
-                print("Selected Plans: \(selectedPlans)")
-            }) {
-                Text("Plan Now!")
-                    .font(.headline)
-                    .foregroundColor(.blue)
-            }
-            .padding()
-
-            Text("Step 3 of 3")
-                .font(.footnote)
-                .padding(.bottom)
+            .navigationBarTitle("")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 

@@ -19,8 +19,6 @@ struct Step1View: View {
                     .font(.system(size: 40, weight: .bold))
                     .padding([.top, .leading], 20.0)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                
-                
             }
             VStack{
                 Text("Tips :")
@@ -43,7 +41,7 @@ struct Step1View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(Color.red)
+                                .fill(.maincolor)
                                 .frame(width: 250)
                             )
                     }
@@ -65,7 +63,7 @@ struct Step1View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(Color.red)
+                                .fill(.maincolor)
                                 .frame(width: 250)
                                 //
                             )
@@ -84,7 +82,7 @@ struct Step1View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(Color.red)
+                                .fill(.maincolor)
                                 .frame(width: 250)
                             )
                     }

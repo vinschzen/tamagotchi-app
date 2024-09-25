@@ -25,6 +25,7 @@ class UserData{
     
     var name: String = "Rahian"
     var pet: String = "Rabbit"
+    var equipped: String = ""
     var level:Float = 10
     var money:Int = 300
     var ShopItems: [ShopItem] = [

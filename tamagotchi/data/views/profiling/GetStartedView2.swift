@@ -9,8 +9,9 @@ import SwiftUI
 
 struct GetStartedView2: View {
     let items = [
-        ("Hooray! We've been waiting for you!", "photo1"),
-        ("Let's Get Started!", "photo2"),
+        ("Yay! We've been waiting for you!", "photo1"),
+        ("Here you can keep track on your tasks and raise a pet!", "photo2"),
+        ("Let's Get Started!", "photo3"),
         
     ]
     
@@ -33,12 +34,22 @@ struct GetStartedView2: View {
                                         .cornerRadius(25)
                                         .frame(width: geometry.size.width * 0.8, height: geometry.size.height * 0.6)
                                         .padding(.bottom, 10)
-                                    
-                                    Text(items[index].0)
-                                        .font(.headline)
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .multilineTextAlignment(.center)
+                                    if(index == 2 ){
+                                        Text(items[index].0)
+                                            .font(.title)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.black)
+                                            .multilineTextAlignment(.center)
+                                            .padding()
+                                    }
+                                    else{
+                                        Text(items[index].0)
+                                            .font(.headline)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.black)
+                                            .multilineTextAlignment(.center)
+                                            .padding()
+                                    }
                                 }
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                             }

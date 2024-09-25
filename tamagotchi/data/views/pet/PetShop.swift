@@ -69,6 +69,7 @@ struct PetShop: View {
                                 primaryButton: .destructive(Text("OK")) {
                                     current_user.ShopItems[selectedIndex].status = true
                                     current_user.money = current_user.money-current_user.ShopItems[selectedIndex].price
+                                    current_user.equipped = current_user.ShopItems[selectedIndex].image
                                 },
                                 secondaryButton: .cancel()
                                 
@@ -87,7 +88,6 @@ struct PetShop: View {
                                         isHidden = false
                                         
                                         selectedIndex = i
-                                        print(i)
                                                                                 //alert confirm then
                                     }, label: {
 //                                        StoreShopItem(i: ShopItems[i])
