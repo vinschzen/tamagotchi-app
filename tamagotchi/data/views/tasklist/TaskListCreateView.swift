@@ -74,10 +74,6 @@ struct TaskListCreateView: View {
                                     .textFieldStyle(.roundedBorder)
                                     .frame(maxWidth: .infinity)
                                     .padding(.horizontal)
-                                    .opacity(isEditingTitle ? 1 : 0.5)
-                                    .onTapGesture {
-                                        isEditingTitle.toggle()
-                                    }
                             }
                             .padding(.horizontal)
                             
@@ -159,7 +155,9 @@ struct TaskListCreateView: View {
                         shared: false,
                         tasklist: addedTasks
                     )
+                    
                     context.insert(tasklist)
+		                    
                     do {
                         try context.save()
                     } catch {

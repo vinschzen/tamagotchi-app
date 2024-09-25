@@ -38,7 +38,7 @@ struct Step2View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(.maincolor)
+                                .fill(Color.red)
                                 .frame(width: 250)
                             )
                     }
@@ -60,7 +60,7 @@ struct Step2View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(.maincolor)
+                                .fill(Color.red)
                                 .frame(width: 250)
                                 //
                             )                        
@@ -83,7 +83,7 @@ struct Step2View: View {
                                     cornerRadius: 15,
                                     style: .continuous
                                 )
-                                .fill(.maincolor)
+                                .fill(Color.red)
                                 .frame(width: 250)
                             )
                     }
