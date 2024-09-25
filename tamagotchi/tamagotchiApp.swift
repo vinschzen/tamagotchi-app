@@ -38,7 +38,7 @@ struct tamagotchiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            GetStartedView2()
+            PlansView()
             //app start
         }
         .modelContainer(sharedModelContainer)

@@ -19,8 +19,6 @@ struct Step1View: View {
                     .font(.system(size: 40, weight: .bold))
                     .padding([.top, .leading], 20.0)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                
-                
             }
             VStack{
                 Text("Tips :")

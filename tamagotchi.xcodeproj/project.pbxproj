@@ -15,6 +15,7 @@
 		0465D56A2CA127D300765D53 /* ChooseDBHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5692CA127D300765D53 /* ChooseDBHView.swift */; };
 		0465D56C2CA128D900765D53 /* ChooseISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D56B2CA128D900765D53 /* ChooseISView.swift */; };
 		0465D56E2CA15FDB00765D53 /* chooseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D56D2CA15FDB00765D53 /* chooseTest.swift */; };
+		047F71C92CA27CE000B8D82F /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F71C82CA27CE000B8D82F /* PlansView.swift */; };
 		049A22E12C912ECA0071854C /* tamagotchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E02C912ECA0071854C /* tamagotchiApp.swift */; };
 		049A22E32C912ECA0071854C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E22C912ECA0071854C /* ContentView.swift */; };
 		049A22E52C912ECA0071854C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A22E42C912ECA0071854C /* Item.swift */; };
@@ -38,6 +39,7 @@
 		049A23492C93E4890071854C /* TaskListCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A23482C93E4890071854C /* TaskListCreateView.swift */; };
 		049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A234C2C93FB4A0071854C /* TaskItemView.swift */; };
 		04BC84252C9BCC9300F90E0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */; };
+		04F474A82CA284BC00FE60D1 /* FinalizePlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F474A72CA284BC00FE60D1 /* FinalizePlanView.swift */; };
 		04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,7 @@
 		0465D5692CA127D300765D53 /* ChooseDBHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDBHView.swift; sourceTree = "<group>"; };
 		0465D56B2CA128D900765D53 /* ChooseISView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseISView.swift; sourceTree = "<group>"; };
 		0465D56D2CA15FDB00765D53 /* chooseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseTest.swift; sourceTree = "<group>"; };
+		047F71C82CA27CE000B8D82F /* PlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansView.swift; sourceTree = "<group>"; };
 		049A22DD2C912ECA0071854C /* tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tamagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049A22E02C912ECA0071854C /* tamagotchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamagotchiApp.swift; sourceTree = "<group>"; };
 		049A22E22C912ECA0071854C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		049A23482C93E4890071854C /* TaskListCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCreateView.swift; sourceTree = "<group>"; };
 		049A234C2C93FB4A0071854C /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		04BC84242C9BCC9300F90E0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04F474A72CA284BC00FE60D1 /* FinalizePlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizePlanView.swift; sourceTree = "<group>"; };
 		04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,8 +228,10 @@
 				0465D5482C9BD86300765D53 /* ChooseBPView.swift */,
 				0465D5692CA127D300765D53 /* ChooseDBHView.swift */,
 				0465D56B2CA128D900765D53 /* ChooseISView.swift */,
-				0465D5652C9D727400765D53 /* DotProgressView.swift */,
 				0465D56D2CA15FDB00765D53 /* chooseTest.swift */,
+				047F71C82CA27CE000B8D82F /* PlansView.swift */,
+				04F474A72CA284BC00FE60D1 /* FinalizePlanView.swift */,
+				0465D5652C9D727400765D53 /* DotProgressView.swift */,
 			);
 			path = profiling;
 			sourceTree = "<group>";
@@ -409,11 +415,13 @@
 				049A23432C93E2650071854C /* PetMainView.swift in Sources */,
 				049A23472C93E3940071854C /* HomeView.swift in Sources */,
 				0465D5682C9D76F900765D53 /* GetStartedView2.swift in Sources */,
+				047F71C92CA27CE000B8D82F /* PlansView.swift in Sources */,
 				0465D5452C9BD85000765D53 /* Step1View.swift in Sources */,
 				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
 				0465D5492C9BD86300765D53 /* ChooseBPView.swift in Sources */,
 				0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */,
 				049A230E2C9130860071854C /* User.swift in Sources */,
+				04F474A82CA284BC00FE60D1 /* FinalizePlanView.swift in Sources */,
 				0465D56E2CA15FDB00765D53 /* chooseTest.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
@@ -644,8 +652,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SW7998CMJ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -663,8 +673,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SW7998CMJ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -683,10 +695,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QRL5NSR5NS;
+				DEVELOPMENT_TEAM = SW7998CMJ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchi;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5hia.tamagotchi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -701,10 +713,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QRL5NSR5NS;
+				DEVELOPMENT_TEAM = SW7998CMJ2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kelompok5.tamagotchi;
+				PRODUCT_BUNDLE_IDENTIFIER = kelompok5hia.tamagotchi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
