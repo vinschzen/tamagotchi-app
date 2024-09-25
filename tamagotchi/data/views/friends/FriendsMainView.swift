@@ -63,7 +63,7 @@ struct FriendsMainView: View {
                     .padding(.vertical, 8)
                 }
                 .listStyle(PlainListStyle())
-                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+                .searchable(text: $searchText)
                 
                 VStack {
                     Spacer()
