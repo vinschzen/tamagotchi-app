@@ -1,10 +1,13 @@
 import SwiftUI
+import SwiftData
 
 struct PetMainView: View {
     @State private var currency: Int = 300
     @State private var selectedIndex: Int = 0
     @State var Rabbit : String = ""
     @State private var animated_index = 0
+    
+    var current_user = UserData.shared
 
     var body: some View {
             VStack {
@@ -28,7 +31,7 @@ struct PetMainView: View {
                     }
                     HStack{
                         Spacer()
-                        Text(String(currency))
+                        Text(String(current_user.money))
                         Image(systemName: "dollarsign.circle.fill")
                             .foregroundColor(.orange)
                     }.padding(.trailing, 5)
@@ -44,7 +47,7 @@ struct PetMainView: View {
                     .foregroundStyle(.secondary)
                     .fontWeight(.light)
                     .padding(2)
-                Text("Raihan")
+                Text(current_user.name)
                     .font(.system(size: 22))
                     .font(.title)
                     .fontWeight(.bold)
@@ -63,12 +66,12 @@ struct PetMainView: View {
                         .onAppear(perform: animate)
                 }
                 
-                ProgressView(value: Float(30) / 100)
+                ProgressView(value: current_user.level/100)
                                 .progressViewStyle(LinearProgressViewStyle(tint: Color.blue))
                                 .frame(width: 200)
                                 .padding(.bottom, 15)
                             
-                Text("Level 3")
+                Text("Level \(1 + Int(floor(current_user.level/100)))")
                                 .font(.title3)
                                 .padding(.bottom, 30)
   
@@ -105,6 +108,8 @@ struct PetMainView: View {
             }
         }
     }
+    
+    
 }
 
 #Preview{

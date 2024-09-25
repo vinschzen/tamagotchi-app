@@ -13,12 +13,12 @@ struct PetShop: View {
     @State var Rabbit : String = ""
     @State var Accessories : String = ""
     
-    @State private var ShopItems: [ShopItem] = [
-        ShopItem(name: "Clover", image: "leaf" , price: 20, status: false),
-        ShopItem(name: "Chick", image: "chick" , price: 20, status: false),
-        ShopItem(name: "Flower", image: "flower" , price: 20, status: false),
-        ShopItem(name: "Ribbon", image: "ribbon" , price: 20, status: false),
-    ]
+//    @State private var ShopItems: [ShopItem] = [
+//        ShopItem(name: "Clover", image: "leaf" , price: 20, status: false),
+//        ShopItem(name: "Chick", image: "chick" , price: 20, status: false),
+//        ShopItem(name: "Flower", image: "flower" , price: 20, status: false),
+//        ShopItem(name: "Ribbon", image: "ribbon" , price: 20, status: false),
+//    ]
     
     @State var toggle: Bool = false
     @State var isHidden: Bool = true
@@ -26,16 +26,18 @@ struct PetShop: View {
     @Binding var currency: Int
     @State private var animated_index = 0
     
-    @Environment(\.modelContext) private var context
-    @Query private var user: [User]
+//    @Environment(\.modelContext) private var context
+//    @State private var user: User?
     
+    var current_user = UserData.shared
+
     var body: some View {
         NavigationView{
             VStack{
                 VStack(alignment: .trailing){
                     HStack{
                         Spacer()
-                        Text(String(currency))
+                        Text(String(current_user.money))
                         Image(systemName: "dollarsign.circle.fill")
                             .foregroundColor(.orange)
                     }.padding(.trailing, 5)
@@ -47,7 +49,7 @@ struct PetShop: View {
                 ZStack{
                     AnimatedImage(name: Rabbit, dir: "rabbit")
                     if !isAcc{
-                        Image(ShopItems[selectedIndex].image + "\(animated_index)")
+                        Image(current_user.ShopItems[selectedIndex].image + "\(animated_index)")
                             .resizable()
                             .scaledToFit()
                             .frame(height: 400, alignment: .center)
@@ -63,10 +65,10 @@ struct PetShop: View {
                         .alert(isPresented: $toggle) {
                             Alert(
                                 title: Text("Konfirmasi pembelian item"),
-                                message: Text("Nama item : \(ShopItems[selectedIndex].name) \n Harga item :  \(ShopItems[selectedIndex].price)"),
+                                message: Text("Nama item : \(current_user.ShopItems[selectedIndex].name) \n Harga item :  \(current_user.ShopItems[selectedIndex].price)"),
                                 primaryButton: .destructive(Text("OK")) {
-                                    ShopItems[selectedIndex].status = true
-                                    currency = currency-ShopItems[selectedIndex].price
+                                    current_user.ShopItems[selectedIndex].status = true
+                                    current_user.money = current_user.money-current_user.ShopItems[selectedIndex].price
                                 },
                                 secondaryButton: .cancel()
                                 
@@ -78,7 +80,7 @@ struct PetShop: View {
                 }.frame(height:280)
                 ScrollView {
                             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
-                                ForEach(0..<ShopItems.count) { i in
+                                ForEach(0..<current_user.ShopItems.count) { i in
 
                                     Button(action:{
                                         isAcc = false
@@ -93,11 +95,11 @@ struct PetShop: View {
                                             Rectangle().foregroundColor(.white)
                                             VStack{
                                                 
-                                                Image(ShopItems[i].image).resizable()
+                                                Image(current_user.ShopItems[i].image).resizable()
                                                     .scaledToFit()
                                                     .padding(.top, 8)
                                                 
-                                                if (ShopItems[i].status) {
+                                                if (current_user.ShopItems[i].status) {
                                                     Text( "Purchased" )
                                                         .font(.system(size: 18))
                                                         .padding(.bottom, 5)
@@ -105,7 +107,7 @@ struct PetShop: View {
                                                         .fontWeight(.semibold)
                                                 }
                                                 else {
-                                                    Text( "$ "+String(ShopItems[i].price))
+                                                    Text( "$ "+String(current_user.ShopItems[i].price))
                                                         .font(.system(size: 18))
                                                         .padding(.bottom, 5)
                                                         .foregroundColor(.black)

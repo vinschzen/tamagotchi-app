@@ -11,9 +11,11 @@ struct ProcessRowView: View {
     
     let tasklist: TaskList
     let confettiAction: (Bool) -> Void
+    let notifyAction: (TaskItem) -> Void
 
+    
     @Environment(\.modelContext) private var context
-
+    
     var body: some View {
         // by default navigate as-is
         NavigationLink(tasklist.title, destination: destination, isActive: $isActive)
@@ -47,6 +49,8 @@ struct ProcessRowView: View {
                     guard !t.finished else {return}
                     t.finished = true
                     confettiAction(true)
+                    notifyAction(t)
+                    
                 }
                 Text(t.name)
                     .frame(maxWidth: .infinity, alignment: .leading)

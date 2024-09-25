@@ -21,13 +21,16 @@ struct TaskListHomeView: View {
     @Query private var tasklists: [TaskList]
     @State private var isSectionExpanded: [Bool] = Array(repeating: false, count: 50)
     @State private var showConfetti = false
+    
+    var current_user = UserData.shared
 
+    @State private var toast: Toast? = nil
 
     var body: some View {
         NavigationSplitView {
             List {
                 ForEach(tasklists) { l in
-                    ProcessRowView(tasklist: l, confettiAction: confetti)
+                    ProcessRowView(tasklist: l, confettiAction: confetti, notifyAction: notify)
                 }
             }
             .toolbar {
@@ -53,7 +56,9 @@ struct TaskListHomeView: View {
         } detail: {
             Text("Select an item")
         }                
-        .displayConfetti(isActive: $showConfetti)
+        .displayConfetti(isActive: $showConfetti)       
+        .toastView(toast: $toast)
+
     }
     
     private func addItem() {
@@ -84,6 +89,15 @@ struct TaskListHomeView: View {
                 showConfetti = false
             }
         }
+    }
+    
+    func notify(task: TaskItem) {
+        
+        var levelGained = Float(task.priority) * 10
+        var moneyGained = task.priority * 10
+        current_user.level += levelGained
+        current_user.money += moneyGained
+        self.toast = Toast(message: "\(levelGained) EXP + | \(moneyGained) $ +")
     }
     
     private func filter() {

@@ -8,9 +8,6 @@ struct HomeView: View {
     
     @State private var selectedIndex: Int = 0
     
-    @Environment(\.modelContext) var modelContext
-    @State private var user: User?
-    
     var body: some View {
         NavigationView {
             TabView(selection: $selectedIndex) {
@@ -36,16 +33,8 @@ struct HomeView: View {
                     .badge("12")
                     .tag(2)
             }
-            .onAppear(perform: load)
         }
         
     }
     
-    
-    
-    func load() {
-        let request = FetchDescriptor<User>()
-        let data = try? modelContext.fetch(request)
-        user = data?.first ?? User(name: "User", level: 10.0, money: 300)
-    }
 }
