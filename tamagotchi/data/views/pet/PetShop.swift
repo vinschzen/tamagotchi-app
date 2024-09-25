@@ -18,9 +18,11 @@ struct PetShop: View {
         ShopItem(name: "Ribbon", image: "ribbon" , price: 20, status: false),
     ]
     @State var toggle: Bool = false
+    @State var toggleEquip: Bool = false
     @State var isHidden: Bool = true
     @State var isAcc: Bool = true
     @Binding var currency: Int
+    @Binding var accessories: String
     @State private var animated_index = 0
     
     var body: some View {
@@ -39,7 +41,7 @@ struct PetShop: View {
                     .fontWeight(.bold)
                     .padding(.top, 30)
                 ZStack{
-                    AnimatedImage(name: Rabbit, dir: "rabbit")
+                    AnimatedImage(name: Rabbit, dir: "rabbit", loop:9)
                     if !isAcc{
                         Image(ShopItems[selectedIndex].image + "\(animated_index)")
                             .resizable()
@@ -48,36 +50,64 @@ struct PetShop: View {
                             .onAppear(perform: animate)
                     }
                     if !isHidden{
-                        Button(action: {
-                            toggle = true
-                        }, label: {
-                            Text("BUY").fontWeight(.bold)
-                        })
-                        .padding(8)
-                        .alert(isPresented: $toggle) {
-                            Alert(
-                                title: Text("Konfirmasi pembelian item"),
-                                message: Text("Nama item : \(ShopItems[selectedIndex].name) \n Harga item :  \(ShopItems[selectedIndex].price)"),
-                                primaryButton: .destructive(Text("OK")) {
-                                    ShopItems[selectedIndex].status = true
-                                    currency = currency-ShopItems[selectedIndex].price
-                                },
-                                secondaryButton: .cancel()
-                                
-                                
-                            )
+                        HStack{
+                            //status false : not purchased -> buy not disabled -> disabled false
+                            Button(action: {
+                                toggle = true
+                                print(ShopItems[selectedIndex].status)
+                            }, label: {
+                                Text("BUY").fontWeight(.bold)
+                            })
+                            .disabled(ShopItems[selectedIndex].status)
+                            .padding(8)
+                            .frame(width:130)
+                            //.foregroundColor(.white)
+                            //.background(Color("RColor"))
+                            //.cornerRadius(10)
+                            .padding(.top, 310)
+                            .alert(isPresented: $toggle) {
+                                Alert(
+                                    title: Text("Konfirmasi pembelian item"),
+                                    message: Text("Nama item : \(ShopItems[selectedIndex].name) \n Harga item :  \(ShopItems[selectedIndex].price)"),
+                                    primaryButton: .destructive(Text("OK")) {
+                                        ShopItems[selectedIndex].status = true
+                                        currency = currency-ShopItems[selectedIndex].price
+                                    },
+                                    secondaryButton: .cancel()
+                                )
+                            }
+                            
+                            Button(action: {
+                                toggleEquip = true
+                            }, label: {
+                                Text("EQUIP").fontWeight(.bold)
+                            })
+                            .disabled(!ShopItems[selectedIndex].status)
+                            .padding(8)
+                            .frame(width:130)
+                            //.foregroundColor(.white)
+                            //.background(Color("RColor"))
+                            //.cornerRadius(10)
+                            .alert(isPresented: $toggleEquip) {
+                                Alert(
+                                    title: Text("Konfirmasi pemakaian item"),
+                                    message: Text("Apakah Anda yakin menggunakan item \(ShopItems[selectedIndex].name) ?"),
+                                    primaryButton: .destructive(Text("OK")) {
+                                        accessories=ShopItems[selectedIndex].image
+                                    },
+                                    secondaryButton: .cancel()
+                                )
+                            }
+                            .padding(.top, 310)
                         }
-                        .padding(.top, 310)
                     }
                 }.frame(height:280)
                 ScrollView {
                             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
                                 ForEach(0..<ShopItems.count) { i in
-
                                     Button(action:{
                                         isAcc = false
                                         isHidden = false
-                                        
                                         selectedIndex = i
                                         print(i)
                                                                                 //alert confirm then

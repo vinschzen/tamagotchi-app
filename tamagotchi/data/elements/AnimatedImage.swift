@@ -12,12 +12,13 @@ struct AnimatedImage: View {
     
     @State var name:String
     @State var dir:String
+    @State var loop:Int
     
     var body: some View {
         Image(name)
             .resizable()
             .scaledToFit()
-            .frame(height: 400, alignment: .center)
+            .frame(height: 300, alignment: .center)
             .onAppear(perform: timer)
     }
     
@@ -30,7 +31,7 @@ struct AnimatedImage: View {
             
             index += 1
                 
-            if (index > 9){
+            if (index > loop){
                 index = 1
                 
                 

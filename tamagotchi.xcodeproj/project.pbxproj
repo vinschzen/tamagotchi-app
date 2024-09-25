@@ -35,6 +35,8 @@
 		04A2CFE42CA13A940061DCC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A2CFE32CA13A940061DCC2 /* GoogleService-Info.plist */; };
 		04A2CFE52CA13C4B0061DCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E62C912ECB0071854C /* Assets.xcassets */; };
 		04A2CFE62CA13C530061DCC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A22E92C912ECB0071854C /* Preview Assets.xcassets */; };
+		04A2CFE82CA39BAA0061DCC2 /* SelectPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2CFE72CA39BAA0061DCC2 /* SelectPet.swift */; };
+		04A2CFEA2CA3C9DB0061DCC2 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2CFE92CA3C9DB0061DCC2 /* Name.swift */; };
 		04FF3B862C9AB73900F0C0D7 /* TaskListDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		04A2CFDF2CA1364A0061DCC2 /* StoreShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreShopItem.swift; sourceTree = "<group>"; };
 		04A2CFE12CA138D20061DCC2 /* AnimatedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
 		04A2CFE32CA13A940061DCC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04A2CFE72CA39BAA0061DCC2 /* SelectPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPet.swift; sourceTree = "<group>"; };
+		04A2CFE92CA3C9DB0061DCC2 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		04FF3B852C9AB73900F0C0D7 /* TaskListDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -240,7 +244,9 @@
 			isa = PBXGroup;
 			children = (
 				049A23422C93E2650071854C /* PetMainView.swift */,
+				04A2CFE92CA3C9DB0061DCC2 /* Name.swift */,
 				0428D6B22C9D31E000C748FA /* PetShop.swift */,
+				04A2CFE72CA39BAA0061DCC2 /* SelectPet.swift */,
 			);
 			path = pet;
 			sourceTree = "<group>";
@@ -403,9 +409,11 @@
 				049A23472C93E3940071854C /* HomeView.swift in Sources */,
 				049A23452C93E2CB0071854C /* FriendsMainView.swift in Sources */,
 				049A230E2C9130860071854C /* User.swift in Sources */,
+				04A2CFEA2CA3C9DB0061DCC2 /* Name.swift in Sources */,
 				049A231E2C91393F0071854C /* LoginView.swift in Sources */,
 				04A2CFE22CA138D20061DCC2 /* AnimatedImage.swift in Sources */,
 				049A23352C93CD260071854C /* TaskListHomeView.swift in Sources */,
+				04A2CFE82CA39BAA0061DCC2 /* SelectPet.swift in Sources */,
 				049A22E32C912ECA0071854C /* ContentView.swift in Sources */,
 				049A234D2C93FB4A0071854C /* TaskItemView.swift in Sources */,
 				049A23182C9136B60071854C /* TaskItem.swift in Sources */,

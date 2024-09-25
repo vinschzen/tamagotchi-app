@@ -5,6 +5,8 @@ struct PetMainView: View {
     @State private var selectedIndex: Int = 0
     @State var Rabbit : String = ""
     @State private var animated_index = 0
+    @State private var accessories = ""
+    //@Binding var name: String
 
     var body: some View {
         NavigationView {
@@ -12,7 +14,7 @@ struct PetMainView: View {
                 VStack(alignment: .trailing){
                     HStack{
                         Spacer()
-                        NavigationLink(destination: PetShop(currency: $currency)){
+                        NavigationLink(destination: PetShop(currency : $currency, accessories: $accessories)){
                             HStack{
                                 Text("Shop").font(.system(size: 16))
                                     .fontWeight(.semibold)
@@ -120,6 +122,6 @@ struct PetMainView: View {
     }
 }
 
-#Preview{
-    PetMainView()
-}
+//#Preview{
+//    PetMainView(, name: $name)
+//}
