@@ -34,6 +34,9 @@ struct HomeView: View {
                     .tag(2)
             }
         }
+        .navigationBarTitle("")
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
         
     }
     

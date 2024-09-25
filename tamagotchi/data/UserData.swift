@@ -24,7 +24,7 @@ class UserData{
     static let shared = UserData()
     
     var name: String = "Rahian"
-    var pet: String = "Rabbit"
+    var pet: String = "rabbit"
     var equipped: String = ""
     var level:Float = 10
     var money:Int = 300

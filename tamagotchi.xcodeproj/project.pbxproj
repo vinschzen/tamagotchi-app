@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0428D6B32C9D31E000C748FA /* PetShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428D6B22C9D31E000C748FA /* PetShop.swift */; };
+		0432382A2CA3D50400606A14 /* PetNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043238292CA3D50400606A14 /* PetNameView.swift */; };
+		0432382C2CA3D52100606A14 /* PetSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432382B2CA3D52100606A14 /* PetSelectView.swift */; };
 		0465D5452C9BD85000765D53 /* Step1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5442C9BD85000765D53 /* Step1View.swift */; };
 		0465D5472C9BD85B00765D53 /* Step2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5462C9BD85B00765D53 /* Step2View.swift */; };
 		0465D5492C9BD86300765D53 /* ChooseBPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465D5482C9BD86300765D53 /* ChooseBPView.swift */; };
@@ -86,6 +88,8 @@
 
 /* Begin PBXFileReference section */
 		0428D6B22C9D31E000C748FA /* PetShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShop.swift; sourceTree = "<group>"; };
+		043238292CA3D50400606A14 /* PetNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetNameView.swift; sourceTree = "<group>"; };
+		0432382B2CA3D52100606A14 /* PetSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSelectView.swift; sourceTree = "<group>"; };
 		0465D5442C9BD85000765D53 /* Step1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1View.swift; sourceTree = "<group>"; };
 		0465D5462C9BD85B00765D53 /* Step2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2View.swift; sourceTree = "<group>"; };
 		0465D5482C9BD86300765D53 /* ChooseBPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBPView.swift; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 			children = (
 				049A23422C93E2650071854C /* PetMainView.swift */,
 				0428D6B22C9D31E000C748FA /* PetShop.swift */,
+				043238292CA3D50400606A14 /* PetNameView.swift */,
+				0432382B2CA3D52100606A14 /* PetSelectView.swift */,
 			);
 			path = pet;
 			sourceTree = "<group>";
@@ -539,6 +545,7 @@
 				049BD2272CA295DF0051EB42 /* Friend.swift in Sources */,
 				049BD1F52CA2743D0051EB42 /* TaskListDetailsView.swift in Sources */,
 				0465D5492C9BD86300765D53 /* ChooseBPView.swift in Sources */,
+				0432382C2CA3D52100606A14 /* PetSelectView.swift in Sources */,
 				049BD2032CA276130051EB42 /* StoreShopItem.swift in Sources */,
 				049BD21E2CA27FBE0051EB42 /* UserData.swift in Sources */,
 				0465D5662C9D727400765D53 /* DotProgressView.swift in Sources */,
@@ -561,6 +568,7 @@
 				049BD1F62CA2743D0051EB42 /* TaskListSharedView.swift in Sources */,
 				049BD2042CA276130051EB42 /* ConfettiElement.swift in Sources */,
 				049A23182C9136B60071854C /* TaskItem.swift in Sources */,
+				0432382A2CA3D50400606A14 /* PetNameView.swift in Sources */,
 				049BD2302CA296C50051EB42 /* AddFriendsView.swift in Sources */,
 				049BD22D2CA296C50051EB42 /* RequestFriendsView.swift in Sources */,
 				049A23122C9133810071854C /* Notification.swift in Sources */,

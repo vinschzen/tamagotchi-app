@@ -22,8 +22,11 @@ struct FinalizePlanView: View {
                         
                     }, label: {
                         //                    navlink ke pet selection
-                        Text("Click Here to Continue")
-                            .underline()
+                        NavigationLink(destination: PetSelectView()){
+                            Text("Click Here to Continue")
+                                .underline()
+                            
+                        }
                     })
                     .padding(.top, 500.0)
                     .foregroundColor(.white)

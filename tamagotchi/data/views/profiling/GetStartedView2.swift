@@ -96,7 +96,7 @@ struct GetStartedView2: View {
                             {
                         
                     }) {
-                        NavigationLink(destination: PetMainView()){
+                        NavigationLink(destination: PetSelectView()){
                             Text("Skip")
                                 .foregroundColor(.blue)
                                 .padding()
